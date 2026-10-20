@@ -1,0 +1,184 @@
+{
+  "query": "đi biển tháng 8",
+  "filters": {
+    "from": "2026-08-01",
+    "to": "2026-08-31",
+    "places": [
+      "Nha Trang"
+    ],
+    "tags": [
+      "biển",
+      "nước",
+      "nắng"
+    ],
+    "kinds": [
+      "trip"
+    ],
+    "members": []
+  },
+  "results": [
+    {
+      "id": "m-nt-1",
+      "type": "photo",
+      "takenAt": "2026-08-08T15:20:00+07:00",
+      "place": "Nha Trang",
+      "country": "Việt Nam",
+      "lat": 12.24,
+      "lon": 109.19,
+      "caption": "Cả nhà xuống biển lúc nắng chếch.",
+      "tags": [
+        "biển",
+        "nha trang",
+        "nắng",
+        "cả nhà",
+        "hè"
+      ],
+      "score": 9,
+      "collectionId": "bien-nha-trang",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/di-bien.jpg",
+        "lg": "/proto-photos/di-bien.jpg",
+        "orig": "/proto-photos/di-bien.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    {
+      "id": "m-nt-2",
+      "type": "photo",
+      "takenAt": "2026-08-09T09:30:00+07:00",
+      "place": "Nha Trang",
+      "country": "Việt Nam",
+      "lat": 12.22,
+      "lon": 109.21,
+      "caption": "Su và Bin nghịch nước, không ai chịu ra khỏi.",
+      "tags": [
+        "biển",
+        "nước",
+        "trẻ con",
+        "nha trang",
+        "hè"
+      ],
+      "score": 8,
+      "collectionId": "bien-nha-trang",
+      "width": 960,
+      "height": 639,
+      "url": {
+        "sm": "/proto-photos/be-nuoc.jpg",
+        "lg": "/proto-photos/be-nuoc.jpg",
+        "orig": "/proto-photos/be-nuoc.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    {
+      "id": "m-nt-3",
+      "type": "photo",
+      "takenAt": "2026-08-10T18:00:00+07:00",
+      "place": "Nha Trang",
+      "country": "Việt Nam",
+      "lat": 12.25,
+      "lon": 109.17,
+      "caption": "Cả nhà chụp chung ở bãi biển, ai cũng đủ mặt.",
+      "tags": [
+        "biển",
+        "cả nhà",
+        "chụp chung",
+        "nha trang",
+        "kỷ niệm"
+      ],
+      "score": 9,
+      "collectionId": "bien-nha-trang",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/hero-co.jpg",
+        "lg": "/proto-photos/hero-co.jpg",
+        "orig": "/proto-photos/hero-co.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    }
+  ],
+  "collections": [
+    {
+      "id": "bien-nha-trang",
+      "kind": "trip",
+      "title": "Biển Nha Trang",
+      "summary": "Bốn ngày ở Nha Trang, nước ấm và Su không chịu ra khỏi biển.",
+      "place": "Nha Trang",
+      "startAt": "2026-08-08T09:00:00+07:00",
+      "endAt": "2026-08-11T17:00:00+07:00",
+      "status": "accepted",
+      "cover": {
+        "id": "m-nt-1",
+        "type": "photo",
+        "takenAt": "2026-08-08T15:20:00+07:00",
+        "place": "Nha Trang",
+        "country": "Việt Nam",
+        "lat": 12.24,
+        "lon": 109.19,
+        "caption": "Cả nhà xuống biển lúc nắng chếch.",
+        "tags": [
+          "biển",
+          "nha trang",
+          "nắng",
+          "cả nhà",
+          "hè"
+        ],
+        "score": 9,
+        "collectionId": "bien-nha-trang",
+        "width": 960,
+        "height": 640,
+        "url": {
+          "sm": "/proto-photos/di-bien.jpg",
+          "lg": "/proto-photos/di-bien.jpg",
+          "orig": "/proto-photos/di-bien.jpg"
+        },
+        "flags": {
+          "blurry": false,
+          "nearDuplicate": false,
+          "hidden": false
+        },
+        "aiStatus": "done"
+      },
+      "count": 187,
+      "members": [
+        {
+          "id": "m-tu-an",
+          "name": "Bố Tuấn",
+          "color": "#F6C445"
+        },
+        {
+          "id": "m-linh",
+          "name": "Mẹ Linh",
+          "color": "#FFC2DB"
+        },
+        {
+          "id": "m-su",
+          "name": "Su",
+          "color": "#D9C6FF"
+        },
+        {
+          "id": "m-bin",
+          "name": "Bin",
+          "color": "#BFE8D6"
+        }
+      ]
+    }
+  ]
+}

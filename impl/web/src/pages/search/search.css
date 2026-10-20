@@ -1,0 +1,643 @@
+/* Trang tìm ảnh `/tim-kiem` (G2). CSS nằm trong thư mục của trang để không đụng
+   `src/styles/` (vùng của cmd `w1:pP`); chỉ dùng token của `src/styles/base.css`. */
+
+.srch {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+.srch h1,
+.srch h2 {
+  letter-spacing: 1.5px;
+}
+
+.srch-hero {
+  max-width: 900px;
+}
+
+.srch-hero h1 {
+  font-size: 56px;
+  line-height: 1.14;
+}
+
+.srch-lead {
+  margin: 18px 0 28px;
+  max-width: 34em;
+  color: #5e3a63;
+}
+
+/* Ô hỏi lớn */
+.srch-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 780px;
+  padding: 8px 8px 8px 20px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--bong-nhe);
+  transition: box-shadow 0.2s ease;
+}
+
+.srch-form:focus-within {
+  box-shadow: 0 0 0 3px rgba(74, 31, 79, 0.18), var(--bong-nhe);
+}
+
+.srch-form-icon {
+  flex: none;
+  color: var(--tim-khoi);
+}
+
+.srch-form input {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 48px;
+  border: 0;
+  background: none;
+  font: 500 16px/1.4 var(--font);
+  color: var(--man);
+  letter-spacing: 0.2px;
+  outline: none;
+}
+
+.srch-form input::placeholder {
+  color: #a980ad;
+}
+
+.srch-form input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.srch-clear {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(74, 31, 79, 0.08);
+  color: var(--tim-khoi);
+  cursor: pointer;
+}
+
+.srch-clear:hover {
+  background: rgba(74, 31, 79, 0.16);
+  color: var(--man);
+}
+
+.srch-submit {
+  flex: none;
+  min-height: 44px;
+  padding: 0 26px;
+}
+
+/* 4 câu mẫu */
+.srch-samples {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.srch-samples-label {
+  color: var(--tim-khoi);
+  font-size: 14px;
+}
+
+.srch-samples ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.srch-sample {
+  padding: 9px 15px;
+  border-radius: 999px;
+  border: 1px solid rgba(74, 31, 79, 0.22);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--man);
+  font: 500 14px/1.2 var(--font);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.srch-sample:hover {
+  background: #fff;
+  border-color: var(--man);
+  transform: translateY(-1px);
+}
+
+.srch-sample.is-on {
+  background: var(--man);
+  border-color: var(--man);
+  color: #fff;
+}
+
+/* Bộ lọc AI hiểu được */
+.srch-filters {
+  margin: 32px 0 4px;
+  padding: 20px 22px;
+  border-radius: var(--r-lon);
+  background: var(--kinh);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: var(--bong-nhe);
+}
+
+.srch-filters-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.srch-filters-head h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.srch-filters-head h2 svg {
+  color: var(--vang);
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.srch-reset {
+  border: 0;
+  background: none;
+  padding: 6px 2px;
+  color: var(--man);
+  font: 600 13px/1.2 var(--font);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.srch-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+.srch-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px 9px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1.5px solid rgba(74, 31, 79, 0.18);
+  color: var(--man);
+  font: 500 14px/1.2 var(--font);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.srch-chip:hover {
+  border-color: var(--man);
+}
+
+.srch-chip svg {
+  flex: none;
+  color: var(--tim-khoi);
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.srch-chip.is-date {
+  background: #fff7df;
+}
+
+.srch-chip.is-kind {
+  background: rgba(246, 196, 69, 0.32);
+}
+
+.srch-chip.is-member {
+  background: rgba(255, 228, 239, 0.9);
+}
+
+.srch-count {
+  margin-top: 14px;
+  color: #5e3a63;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.srch-note {
+  margin-top: 12px;
+  color: var(--tim-khoi);
+  font-size: 14px;
+  max-width: 46em;
+}
+
+/* Lưới kết quả */
+.srch-results {
+  margin-top: 22px;
+}
+
+.srch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.srch-card {
+  min-width: 0;
+  margin: 0;
+  padding: 10px 10px 0;
+  border-radius: var(--r-nho);
+  background: #fff;
+  box-shadow: var(--bong-nhe);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.srch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--bong);
+}
+
+.srch-photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.srch-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.5s ease;
+}
+
+.srch-photo:hover img {
+  transform: scale(1.04);
+}
+
+.srch-video {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(40, 12, 44, 0.72);
+  color: #fff;
+  font: 600 11px/1 var(--btn);
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.srch-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 6px 16px;
+}
+
+.srch-cap {
+  font: italic 500 17px/1.35 var(--serif);
+  color: var(--man);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.srch-meta {
+  color: var(--tim-khoi);
+  font-size: 13px;
+}
+
+/* Mục kỷ niệm liên quan + màn chưa hỏi gì */
+.srch-idle,
+.srch-related {
+  margin-top: 48px;
+}
+
+.srch-idle h2,
+.srch-related h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.srch-collections {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.srch-collections li {
+  min-width: 0;
+}
+
+.srch-muc {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--r-nho);
+  overflow: hidden;
+  box-shadow: var(--bong-nhe);
+  text-decoration: none;
+  isolation: isolate;
+}
+
+.srch-muc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.srch-muc:hover img {
+  transform: scale(1.05);
+}
+
+.srch-muc::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 42%, rgba(40, 12, 44, 0.78));
+}
+
+.srch-muc-t {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 12px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #fff;
+}
+
+.srch-muc-t b {
+  font: 600 18px/1.2 var(--head);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.srch-muc-t small {
+  font-size: 13px;
+  opacity: 0.92;
+}
+
+/* Hộp xem ảnh lớn */
+.srch-dialog {
+  width: min(1080px, 94vw);
+  max-width: 1080px;
+  max-height: 92vh;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-lon);
+  background: transparent;
+  color: var(--man);
+  overflow: visible;
+}
+
+.srch-dialog::backdrop {
+  background: rgba(40, 12, 44, 0.62);
+  backdrop-filter: blur(6px);
+}
+
+.srch-dialog-in {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 92vh;
+  border-radius: var(--r-lon);
+  overflow: hidden;
+  background: var(--hong-sua);
+  box-shadow: var(--bong);
+}
+
+.srch-dialog-img {
+  width: 100%;
+  max-height: 62vh;
+  object-fit: contain;
+  background: rgba(40, 12, 44, 0.92);
+}
+
+.srch-dialog-x {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--man);
+  cursor: pointer;
+}
+
+.srch-dialog-bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 18px 22px 20px;
+}
+
+.srch-dialog-bar b {
+  display: block;
+  margin-bottom: 4px;
+  font: italic 500 20px/1.3 var(--serif);
+}
+
+.srch-dialog-bar span {
+  color: var(--tim-khoi);
+  font-size: 14px;
+}
+
+.srch-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.srch-tags i {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(74, 31, 79, 0.08);
+  color: var(--man);
+  font: 500 12px/1.3 var(--font);
+  font-style: normal;
+}
+
+.srch-dialog-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.srch-dialog-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.srch-dialog-nav span {
+  font-size: 13px;
+  min-width: 48px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .srch-hero h1 {
+    font-size: 44px;
+  }
+
+  .srch-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .srch-collections {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .srch {
+    padding-top: 118px;
+    padding-bottom: 56px;
+  }
+
+  .srch-hero h1 {
+    font-size: 32px;
+    line-height: 1.18;
+  }
+
+  .srch-lead {
+    margin: 14px 0 20px;
+    font-size: 15px;
+  }
+
+  .srch-form {
+    gap: 6px;
+    padding: 6px 6px 6px 14px;
+  }
+
+  .srch-form input {
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .srch-submit {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+  }
+
+  .srch-samples {
+    gap: 8px;
+  }
+
+  .srch-sample {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .srch-filters {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: var(--r-nho);
+  }
+
+  .srch-filters-head h2 {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .srch-chip {
+    padding: 8px 9px 8px 12px;
+    font-size: 13px;
+  }
+
+  .srch-grid {
+    gap: 12px;
+  }
+
+  .srch-card {
+    padding: 6px 6px 0;
+    border-radius: 16px;
+  }
+
+  .srch-photo,
+  .srch-photo img {
+    border-radius: 12px;
+  }
+
+  .srch-card figcaption {
+    padding: 8px 4px 12px;
+  }
+
+  .srch-cap {
+    font-size: 14px;
+  }
+
+  .srch-meta {
+    font-size: 11px;
+  }
+
+  .srch-idle h2,
+  .srch-related h2 {
+    font-size: 22px;
+  }
+
+  .srch-muc-t b {
+    font-size: 14px;
+  }
+
+  .srch-muc-t small {
+    font-size: 11px;
+  }
+
+  .srch-dialog {
+    width: 96vw;
+  }
+
+  .srch-dialog-bar {
+    padding: 14px 16px 16px;
+  }
+
+  .srch-dialog-bar b {
+    font-size: 17px;
+  }
+}

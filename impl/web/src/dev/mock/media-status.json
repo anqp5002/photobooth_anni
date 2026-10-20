@@ -1,0 +1,182 @@
+[
+  {
+    "id": "m-tet-1",
+    "aiStatus": "done",
+    "caption": "Nửa đêm giao thừa, pháo hoa nổ ngay trên đầu cả làng.",
+    "collectionId": "tet-que-noi"
+  },
+  {
+    "id": "m-tet-2",
+    "aiStatus": "done",
+    "caption": "Một vòng pháo hoa thứ hai, Su bịt tai cười toe.",
+    "collectionId": "tet-que-noi"
+  },
+  {
+    "id": "m-tet-3",
+    "aiStatus": "done",
+    "caption": "Sáng mùng 1, quà Tết đặt trên bàn.",
+    "collectionId": "tet-que-noi"
+  },
+  {
+    "id": "m-baby-1",
+    "aiStatus": "done",
+    "caption": "Bin nở nước mắt xoay một vòng rồi cười toe.",
+    "collectionId": "bin-tron-mot-tuoi"
+  },
+  {
+    "id": "m-baby-2",
+    "aiStatus": "done",
+    "caption": "Bàn tay bé xíu nắm chặt ngón tay bố.",
+    "collectionId": "bin-tron-mot-tuoi"
+  },
+  {
+    "id": "m-bd-1",
+    "aiStatus": "done",
+    "caption": "Bánh sinh nhật Su, nến thắp lên là cả nhà im băng.",
+    "collectionId": "sinh-nhat-su"
+  },
+  {
+    "id": "m-bd-2",
+    "aiStatus": "done",
+    "caption": "Su thổi hết nến trong tiếng vỗ tay của cả nhà.",
+    "collectionId": "sinh-nhat-su"
+  },
+  {
+    "id": "m-bd-3",
+    "aiStatus": "done",
+    "caption": "Chụp lại cái bánh sau khi đã cắt gần hết.",
+    "collectionId": "sinh-nhat-su"
+  },
+  {
+    "id": "m-dl-1",
+    "aiStatus": "done",
+    "caption": "Xe dừng bên đường đèo, sương mù phủ kín kính xe.",
+    "collectionId": "he-da-lat"
+  },
+  {
+    "id": "m-dl-2",
+    "aiStatus": "done",
+    "caption": "Su ngồi cạnh cửa sổ, nhìn xuống thung lũng.",
+    "collectionId": "he-da-lat"
+  },
+  {
+    "id": "m-dl-3",
+    "aiStatus": "done",
+    "caption": "Hồ buổi sớm, hơi nước bảng lảng trên mặt nước.",
+    "collectionId": "he-da-lat"
+  },
+  {
+    "id": "m-dl-4",
+    "aiStatus": "done",
+    "caption": "Bờ hồ và dãy núi xanh thẫm sau lớp sương.",
+    "collectionId": "he-da-lat"
+  },
+  {
+    "id": "m-dl-5",
+    "aiStatus": "done",
+    "caption": "Chú chó ở quán cà phê đợi Su cho nó ăn.",
+    "collectionId": "he-da-lat"
+  },
+  {
+    "id": "m-dl-6",
+    "aiStatus": "done",
+    "caption": "Gian hàng ở chợ đêm, Su thích cái bóng đèn lộn loạn.",
+    "collectionId": "he-da-lat"
+  },
+  {
+    "id": "m-nt-1",
+    "aiStatus": "done",
+    "caption": "Cả nhà xuống biển lúc nắng chếch.",
+    "collectionId": "bien-nha-trang"
+  },
+  {
+    "id": "m-nt-2",
+    "aiStatus": "done",
+    "caption": "Su và Bin nghịch nước, không ai chịu ra khỏi.",
+    "collectionId": "bien-nha-trang"
+  },
+  {
+    "id": "m-nt-3",
+    "aiStatus": "done",
+    "caption": "Cả nhà chụp chung ở bãi biển, ai cũng đủ mặt.",
+    "collectionId": "bien-nha-trang"
+  },
+  {
+    "id": "m-wk-1",
+    "aiStatus": "done",
+    "caption": "Tối cuối tuần, cả nhà nằm xem phim trên phòng khách.",
+    "collectionId": "cuoi-tuan-o-nha"
+  },
+  {
+    "id": "m-wk-2",
+    "aiStatus": "done",
+    "caption": "Bữa sáng ăn chung, ai cũng hỏi một câu.",
+    "collectionId": "cuoi-tuan-o-nha"
+  },
+  {
+    "id": "m-wk-3",
+    "aiStatus": "done",
+    "caption": "Bố và con dưới cơn mưa chiều ở Ba Vì.",
+    "collectionId": "cuoi-tuan-o-nha"
+  },
+  {
+    "id": "m-wk-4",
+    "aiStatus": "done",
+    "caption": "Bố đọc truyện cho con nghe bên cửa sổ Hồ Tây.",
+    "collectionId": "cuoi-tuan-o-nha"
+  },
+  {
+    "id": "m-wk-5",
+    "aiStatus": "done",
+    "caption": "Mẹ và Su cùng làm bánh chiều Chủ Nhật.",
+    "collectionId": "cuoi-tuan-o-nha"
+  },
+  {
+    "id": "m-xmas-1",
+    "aiStatus": "done",
+    "caption": "Sáng Giáng sinh, bà mở bao quà cho các cháu.",
+    "collectionId": "giang-sinh-voi-ba"
+  },
+  {
+    "id": "m-hero-om",
+    "aiStatus": "done",
+    "caption": "Mẹ Linh ôm Su dưới nắng chiều.",
+    "collectionId": null
+  },
+  {
+    "id": "m-hero-chay",
+    "aiStatus": "done",
+    "caption": "Su và Bin đuổi nhau trên bãi cỏ ở Yên Sở.",
+    "collectionId": null
+  },
+  {
+    "id": "m-hoang-hon",
+    "aiStatus": "skipped",
+    "caption": "",
+    "collectionId": null
+  },
+  {
+    "id": "m-onday-2025",
+    "aiStatus": "done",
+    "caption": "Bin cười to đến mức cả nhà phải bỏ đũa xuống.",
+    "collectionId": null
+  },
+  {
+    "id": "m-upload-28",
+    "aiStatus": "pending",
+    "caption": "",
+    "collectionId": null
+  },
+  {
+    "id": "m-upload-29",
+    "aiStatus": "pending",
+    "caption": "",
+    "collectionId": null
+  },
+  {
+    "id": "m-upload-30",
+    "aiStatus": "failed",
+    "caption": "",
+    "collectionId": null
+  }
+]

@@ -1,0 +1,41 @@
+# Thư viện, bản build
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Dữ liệu chạy thử: DB, ảnh của người dùng, khoá
+.env
+.env.*
+!.env.example
+.demo*/
+.data/
+*.sqlite
+*.sqlite-*
+*.db
+impl/server/media/
+impl/server/data/*.sqlite*
+
+# Tài liệu nội bộ của team, log, kết quả test
+REPORT_*.md
+MEGAPLAN_*.md
+SPEC.md
+CLAUDE.md
+AGENTS.md
+goal.json
+tasks/
+logs/
+shots/
+mutants/
+*.log
+test-results/
+playwright-report/
+tests/.tmp*/
+.director_*
+design/ref/
+
+# Cấu hình công cụ AI của team
+.commandcode/
+.opencode/
+.claude/
+.playwright-mcp/
+tests/r1-old/

@@ -1,0 +1,244 @@
+/* Trang tải ảnh lên `/tai-anh` (G3) — nằm trong `pages/upload/` để không đụng
+   `src/styles/` (vùng của w1:pP). Dùng token của bản mẫu (`src/styles/base.css`). */
+
+.upl {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+.upl .head {
+  margin-bottom: 20px;
+}
+
+.upl .head h2 {
+  font-size: var(--fs-h2);
+  margin-bottom: 8px;
+}
+
+.upl .head p {
+  color: var(--tim-khoi);
+  max-width: 620px;
+}
+
+/* Vùng kéo thả */
+.upl .drop {
+  border: 2px dashed var(--tim-khoi);
+  border-radius: var(--r-nho);
+  padding: 36px 16px;
+  text-align: center;
+  background: #fff;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.upl .drop.on {
+  background: var(--hong-sua);
+  border-color: var(--man);
+}
+
+.upl .drop .ic {
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+  color: var(--tim-khoi);
+}
+
+.upl .drop p {
+  margin: 8px 0 16px;
+  color: var(--tim-khoi);
+}
+
+/* Danh sách tệp */
+.upl-list,
+.upl-ai-suggestions {
+  margin-top: 34px;
+}
+
+.upl-list-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.upl-list-head h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+}
+
+.upl-list-head h3 svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--vang);
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.upl-list-head span {
+  color: var(--tim-khoi);
+  font-size: 14px;
+}
+
+.upl-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.upl-item {
+  background: var(--hong-sua);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--r-nho);
+  padding: 14px 18px;
+  box-shadow: var(--bong-nhe);
+}
+
+.upl-item-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.upl-item-top b {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.upl-item-top span {
+  color: var(--tim-khoi);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.upl-bar {
+  margin-top: 10px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(142, 90, 147, 0.16);
+  overflow: hidden;
+}
+
+.upl-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--man);
+  transition: width 0.2s;
+}
+
+.upl-ai {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--tim-khoi);
+}
+
+.upl-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: var(--vang);
+}
+
+.upl-dot.ai-done {
+  background: #3f7d6e;
+}
+
+.upl-dot.ai-failed {
+  background: #d45b7a;
+}
+
+.upl-dot.ai-skipped {
+  background: var(--text-muted, #8493a6);
+}
+
+.upl-error {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #c0392b;
+}
+
+/* Gợi ý của AI */
+.upl-empty {
+  color: var(--tim-khoi);
+}
+
+.upl-card {
+  background: var(--hong-sua);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--r-nho);
+  padding: 18px 20px;
+  box-shadow: var(--bong-nhe);
+  margin-bottom: 14px;
+}
+
+.upl-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.upl-card-head h4 {
+  font-family: var(--head);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.upl-card-head span {
+  color: var(--tim-khoi);
+  font-size: 14px;
+}
+
+.upl-suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.upl-suggestions li {
+  border-top: 1px solid rgba(74, 31, 79, 0.12);
+  padding-top: 10px;
+}
+
+.upl-suggestions p {
+  margin-bottom: 10px;
+}
+
+.upl-suggestions-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .upl {
+    padding-top: 120px;
+  }
+
+  .upl .head h2 {
+    font-size: 28px;
+  }
+
+  .upl .drop {
+    padding: 28px 12px;
+  }
+
+  .upl-item-top {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

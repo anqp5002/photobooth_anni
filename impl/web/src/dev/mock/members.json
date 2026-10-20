@@ -1,0 +1,27 @@
+[
+  {
+    "id": "m-tu-an",
+    "name": "Bố Tuấn",
+    "color": "#F6C445"
+  },
+  {
+    "id": "m-linh",
+    "name": "Mẹ Linh",
+    "color": "#FFC2DB"
+  },
+  {
+    "id": "m-su",
+    "name": "Su",
+    "color": "#D9C6FF"
+  },
+  {
+    "id": "m-bin",
+    "name": "Bin",
+    "color": "#BFE8D6"
+  },
+  {
+    "id": "m-ba",
+    "name": "Bà nội",
+    "color": "#FFC79B"
+  }
+]

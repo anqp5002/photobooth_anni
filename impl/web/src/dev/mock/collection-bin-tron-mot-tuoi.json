@@ -1,0 +1,176 @@
+{
+  "id": "bin-tron-mot-tuoi",
+  "kind": "baby",
+  "title": "Bin tròn 1 tuổi",
+  "summary": "Ngày sinh nhật đầu tiên của Bin ở nhà: bánh chưa kịp cắt thì Bin đã cười.",
+  "place": "Hà Nội",
+  "startAt": "2026-03-08T08:00:00+07:00",
+  "endAt": "2026-03-08T21:00:00+07:00",
+  "status": "accepted",
+  "cover": {
+    "id": "m-baby-1",
+    "type": "photo",
+    "takenAt": "2026-03-08T10:05:00+07:00",
+    "place": "Hà Nội",
+    "country": "Việt Nam",
+    "lat": 21.03,
+    "lon": 105.85,
+    "caption": "Bin nở nước mắt xoay một vòng rồi cười toe.",
+    "tags": [
+      "bin",
+      "em bé",
+      "sinh nhật",
+      "cười",
+      "một tuổi"
+    ],
+    "score": 9,
+    "collectionId": "bin-tron-mot-tuoi",
+    "width": 960,
+    "height": 720,
+    "url": {
+      "sm": "/proto-photos/em-be.jpg",
+      "lg": "/proto-photos/em-be.jpg",
+      "orig": "/proto-photos/em-be.jpg"
+    },
+    "flags": {
+      "blurry": false,
+      "nearDuplicate": false,
+      "hidden": false
+    },
+    "aiStatus": "done"
+  },
+  "count": 98,
+  "members": [
+    {
+      "id": "m-tu-an",
+      "name": "Bố Tuấn",
+      "color": "#F6C445"
+    },
+    {
+      "id": "m-linh",
+      "name": "Mẹ Linh",
+      "color": "#FFC2DB"
+    },
+    {
+      "id": "m-su",
+      "name": "Su",
+      "color": "#D9C6FF"
+    },
+    {
+      "id": "m-bin",
+      "name": "Bin",
+      "color": "#BFE8D6"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-03-08",
+      "media": [
+        {
+          "id": "m-baby-1",
+          "type": "photo",
+          "takenAt": "2026-03-08T10:05:00+07:00",
+          "place": "Hà Nội",
+          "country": "Việt Nam",
+          "lat": 21.03,
+          "lon": 105.85,
+          "caption": "Bin nở nước mắt xoay một vòng rồi cười toe.",
+          "tags": [
+            "bin",
+            "em bé",
+            "sinh nhật",
+            "cười",
+            "một tuổi"
+          ],
+          "score": 9,
+          "collectionId": "bin-tron-mot-tuoi",
+          "width": 960,
+          "height": 720,
+          "url": {
+            "sm": "/proto-photos/em-be.jpg",
+            "lg": "/proto-photos/em-be.jpg",
+            "orig": "/proto-photos/em-be.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        },
+        {
+          "id": "m-baby-2",
+          "type": "photo",
+          "takenAt": "2026-03-08T10:12:00+07:00",
+          "place": "Hà Nội",
+          "country": "Việt Nam",
+          "lat": 21.03,
+          "lon": 105.85,
+          "caption": "Bàn tay bé xíu nắm chặt ngón tay bố.",
+          "tags": [
+            "bin",
+            "bàn tay",
+            "em bé",
+            "bố",
+            "gia đình"
+          ],
+          "score": 8,
+          "collectionId": "bin-tron-mot-tuoi",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/tay-be.jpg",
+            "lg": "/proto-photos/tay-be.jpg",
+            "orig": "/proto-photos/tay-be.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    }
+  ],
+  "route": [
+    {
+      "lat": 21.03,
+      "lon": 105.85
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "bin-tron-mot-tuoi-sug-hide",
+      "type": "hide_blurry",
+      "text": "Ẩn 1 ảnh chụp mờ trong tiệc sinh nhật.",
+      "payload": {
+        "mediaIds": []
+      }
+    },
+    {
+      "id": "bin-tron-mot-tuoi-sug-merge",
+      "type": "merge",
+      "text": "Gộp với mục Sinh nhật Su 7 tuổi? Cùng chỗ, cùng bánh.",
+      "payload": {
+        "intoId": "cuoi-tuan-o-nha"
+      }
+    },
+    {
+      "id": "bin-tron-mot-tuoi-sug-split",
+      "type": "split",
+      "text": "Tách ảnh chụp tay bé xíu ra thành mục riêng?",
+      "payload": {
+        "mediaId": "m-baby-2"
+      }
+    },
+    {
+      "id": "bin-tron-mot-tuoi-sug-rename",
+      "type": "rename",
+      "text": "Đổi tên mục thành \"Sinh nhật Bin 1 tuổi\"?",
+      "payload": {
+        "title": "Sinh nhật Bin 1 tuổi"
+      }
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "id": "cuoi-tuan-o-nha",
+  "kind": "weekend",
+  "title": "Cuối tuần ở nhà",
+  "summary": "Những cuối tuần ở Hà Nội: bếp, phòng khách, Hồ Tây và mấy chuyến đi chỉ nửa ngày.",
+  "place": "Hà Nội",
+  "startAt": "2026-01-11T08:00:00+07:00",
+  "endAt": "2026-12-28T22:00:00+07:00",
+  "status": "accepted",
+  "cover": {
+    "id": "m-wk-4",
+    "type": "photo",
+    "takenAt": "2026-10-10T16:25:00+07:00",
+    "place": "Hồ Tây, Hà Nội",
+    "country": "Việt Nam",
+    "lat": 21.07,
+    "lon": 105.82,
+    "caption": "Bố đọc truyện cho con nghe bên cửa sổ Hồ Tây.",
+    "tags": [
+      "hồ tây",
+      "bố",
+      "con gái",
+      "đọc truyện",
+      "cuối tuần"
+    ],
+    "score": 8,
+    "collectionId": "cuoi-tuan-o-nha",
+    "width": 960,
+    "height": 640,
+    "url": {
+      "sm": "/proto-photos/bo-con-doc.jpg",
+      "lg": "/proto-photos/bo-con-doc.jpg",
+      "orig": "/proto-photos/bo-con-doc.jpg"
+    },
+    "flags": {
+      "blurry": false,
+      "nearDuplicate": false,
+      "hidden": false
+    },
+    "aiStatus": "done"
+  },
+  "count": 372,
+  "members": [
+    {
+      "id": "m-tu-an",
+      "name": "Bố Tuấn",
+      "color": "#F6C445"
+    },
+    {
+      "id": "m-linh",
+      "name": "Mẹ Linh",
+      "color": "#FFC2DB"
+    },
+    {
+      "id": "m-su",
+      "name": "Su",
+      "color": "#D9C6FF"
+    },
+    {
+      "id": "m-bin",
+      "name": "Bin",
+      "color": "#BFE8D6"
+    },
+    {
+      "id": "m-ba",
+      "name": "Bà nội",
+      "color": "#FFC79B"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-04-04",
+      "media": [
+        {
+          "id": "m-wk-1",
+          "type": "photo",
+          "takenAt": "2026-04-04T20:10:00+07:00",
+          "place": "Hà Nội",
+          "country": "Việt Nam",
+          "lat": 21.03,
+          "lon": 105.85,
+          "caption": "Tối cuối tuần, cả nhà nằm xem phim trên phòng khách.",
+          "tags": [
+            "phòng khách",
+            "tối",
+            "cuối tuần",
+            "xem phim",
+            "gia đình"
+          ],
+          "score": 7,
+          "collectionId": "cuoi-tuan-o-nha",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/phong-khach.jpg",
+            "lg": "/proto-photos/phong-khach.jpg",
+            "orig": "/proto-photos/phong-khach.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": true,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "media": [
+        {
+          "id": "m-wk-2",
+          "type": "photo",
+          "takenAt": "2026-04-05T07:20:00+07:00",
+          "place": "Hà Nội",
+          "country": "Việt Nam",
+          "lat": 21.03,
+          "lon": 105.85,
+          "caption": "Bữa sáng ăn chung, ai cũng hỏi một câu.",
+          "tags": [
+            "bữa sáng",
+            "bếp",
+            "gia đình",
+            "ăn uống",
+            "cuối tuần"
+          ],
+          "score": 8,
+          "collectionId": "cuoi-tuan-o-nha",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/bep.jpg",
+            "lg": "/proto-photos/bep.jpg",
+            "orig": "/proto-photos/bep.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "media": [
+        {
+          "id": "m-wk-3",
+          "type": "photo",
+          "takenAt": "2026-06-14T15:40:00+07:00",
+          "place": "Ba Vì, Hà Nội",
+          "country": "Việt Nam",
+          "lat": 21.08,
+          "lon": 105.42,
+          "caption": "Bố và con dưới cơn mưa chiều ở Ba Vì.",
+          "tags": [
+            "ba vì",
+            "mưa",
+            "bố",
+            "con gái",
+            "cuối tuần"
+          ],
+          "score": 8,
+          "collectionId": "cuoi-tuan-o-nha",
+          "width": 960,
+          "height": 1440,
+          "url": {
+            "sm": "/proto-photos/bo-con-mua.jpg",
+            "lg": "/proto-photos/bo-con-mua.jpg",
+            "orig": "/proto-photos/bo-con-mua.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "media": [
+        {
+          "id": "m-wk-5",
+          "type": "photo",
+          "takenAt": "2026-09-12T10:00:00+07:00",
+          "place": "Đồng Mô, Hà Nội",
+          "country": "Việt Nam",
+          "lat": 21.02,
+          "lon": 105.46,
+          "caption": "Mẹ và Su cùng làm bánh chiều Chủ Nhật.",
+          "tags": [
+            "làm bánh",
+            "mẹ",
+            "su",
+            "chủ nhật",
+            "nhà"
+          ],
+          "score": 9,
+          "collectionId": "cuoi-tuan-o-nha",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/me-con-banh.jpg",
+            "lg": "/proto-photos/me-con-banh.jpg",
+            "orig": "/proto-photos/me-con-banh.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "media": [
+        {
+          "id": "m-wk-4",
+          "type": "photo",
+          "takenAt": "2026-10-10T16:25:00+07:00",
+          "place": "Hồ Tây, Hà Nội",
+          "country": "Việt Nam",
+          "lat": 21.07,
+          "lon": 105.82,
+          "caption": "Bố đọc truyện cho con nghe bên cửa sổ Hồ Tây.",
+          "tags": [
+            "hồ tây",
+            "bố",
+            "con gái",
+            "đọc truyện",
+            "cuối tuần"
+          ],
+          "score": 8,
+          "collectionId": "cuoi-tuan-o-nha",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/bo-con-doc.jpg",
+            "lg": "/proto-photos/bo-con-doc.jpg",
+            "orig": "/proto-photos/bo-con-doc.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    }
+  ],
+  "route": [
+    {
+      "lat": 21.03,
+      "lon": 105.85
+    },
+    {
+      "lat": 21.07,
+      "lon": 105.82
+    },
+    {
+      "lat": 21.08,
+      "lon": 105.42
+    },
+    {
+      "lat": 21.02,
+      "lon": 105.46
+    },
+    {
+      "lat": 20.99,
+      "lon": 105.94
+    },
+    {
+      "lat": 20.95,
+      "lon": 105.86
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "cuoi-tuan-o-nha-sug-hide",
+      "type": "hide_blurry",
+      "text": "1 ảnh bị mờ đã được ẩn. Ảnh chụp trong bếp tối bị rung tay.",
+      "payload": {
+        "mediaIds": [
+          "m-wk-1"
+        ]
+      }
+    },
+    {
+      "id": "cuoi-tuan-o-nha-sug-merge",
+      "type": "merge",
+      "text": "Gộp với mục Giáng sinh với bà? Cùng ở nhà bà.",
+      "payload": {
+        "intoId": "cuoi-tuan-o-nha"
+      }
+    },
+    {
+      "id": "cuoi-tuan-o-nha-sug-split",
+      "type": "split",
+      "text": "Tách các ảnh đi Ba Vì ra thành mục riêng?",
+      "payload": {
+        "mediaId": "m-wk-3"
+      }
+    },
+    {
+      "id": "cuoi-tuan-o-nha-sug-rename",
+      "type": "rename",
+      "text": "Đổi tên mục thành \"Ở nhà cuối tuần\"?",
+      "payload": {
+        "title": "Ở nhà cuối tuần"
+      }
+    }
+  ]
+}

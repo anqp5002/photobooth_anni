@@ -1,0 +1,65 @@
+/* Hành Trình — bảng màu, thang chữ, hệ nút (SPEC R-013, R-014, R-031) */
+:root {
+  /* R-013 bảng màu */
+  --navy: #00293d;
+  --navy-deep: #001621;
+  --navy-night: #040d19;
+  --red: #f11f4c;
+  --blue: #0099e5;
+  --page: #f6f5f2;
+  --card: #ffffff;
+  --line: #dae0e5;
+  --line-soft: #e7eaee;
+  --text-faint: #b8c1cc;
+  --text-desc: #4d5a6e;
+  --text-muted: #8493a6;
+  --phone-bg: #e7eaee;
+  --cream: #fff2e5;
+  --overlay-photo: rgba(0, 41, 61, 0.85);
+
+  /* R-014 chữ */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Noto Serif', Georgia, 'Times New Roman', serif;
+  --fs-title: 24px;
+  --lh-title: 28px;
+  --fw-title: 700;
+  --fs-sub: 14px;
+  --lh-sub: 20px;
+  --fw-sub: 500;
+  --fs-btn-sm: 12px;
+  --lh-btn-sm: 16px;
+  --fs-btn-lg: 16px;
+  --lh-btn-lg: 24px;
+  --fs-desc: 16px;
+  --lh-desc: 24px;
+  --fs-hero: 64px;
+  --lh-hero: 64px;
+  --fs-h2: 38px;
+  --lh-h2: 46px;
+
+  /* R-031 hệ nút */
+  --btn-sm-h: 32px;
+  --btn-lg-h: 48px;
+  --radius-btn: 999px;
+  --radius-card: 24px;
+  --radius-map: 24px;
+  --radius-photo: 8px;
+  --radius-drawer: 20px;
+  --ring: 0 0 0 2px var(--blue);
+  --tap: 44px;
+
+  --shadow-soft: 0 2px 10px rgba(0, 41, 61, 0.12);
+  --shadow-card: 0 4px 16px rgba(0, 41, 61, 0.1);
+  --ease: 240ms cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

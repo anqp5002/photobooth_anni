@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hè ở Đà Lạt - Hành Trình</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Inter:wght@400;500;600&family=Be+Vietnam+Pro:wght@700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/muc.css">
+</head>
+<body data-page="muc">
+<main id="main" data-empty-title="Mục này chưa có ảnh" data-empty-text="Tải ảnh chụp trong chuyến đi lên, mình sẽ xếp chúng theo từng ngày.">
+<div class="wrap content" style="padding-top:160px">
+
+  <header class="cover">
+    <img src="assets/photos/bien-nui.jpg" alt="Cả nhà bên hồ nhìn ra dãy núi ở Đà Lạt">
+    <div class="cover-t">
+      <a class="back kinh" href="index.html#cac-muc">Các mục</a>
+      <h1>Hè ở Đà Lạt</h1>
+      <p>Ba ngày hai đêm, chiếc xe bảy chỗ và rất nhiều sương.</p>
+    </div>
+  </header>
+
+  <div class="info">
+    <section class="card facts">
+      <dl>
+        <div><dt>Ngày</dt><dd>12 đến 14 tháng 7, 2026</dd></div>
+        <div><dt>Nơi</dt><dd>Đà Lạt, Lâm Đồng</dd></div>
+        <div><dt>Số ảnh</dt><dd>236 ảnh, 11 video</dd></div>
+      </dl>
+      <div class="who"><b>Ai có mặt</b>
+        <ul><li><span class="av a1">T</span>Bố Tuấn</li><li><span class="av a2">L</span>Mẹ Linh</li><li><span class="av a3">S</span>Su</li><li><span class="av a4">B</span>Bin</li></ul>
+      </div>
+    </section>
+    <section class="card mapc" aria-label="Tuyến đi">
+      <div id="mini" class="mini"></div><span class="credit">Ảnh vệ tinh: Esri</span>
+      <a class="btn kinh nho" href="ban-do.html">Xem trên bản đồ lớn</a>
+    </section>
+  </div>
+
+  <section class="ai kinh" aria-label="Gợi ý của AI">
+    <div class="ai-h"><span class="spark"></span><div><h2>Gợi ý của AI</h2><p>Mình đã xem qua mục này và có hai đề nghị. Bạn quyết định giữ hay bỏ.</p></div></div>
+    <div class="sg" data-sg><p><b>3 ảnh bị mờ đã được ẩn.</b> Các ảnh chụp ở đèo Prenn bị rung tay.</p><div><button class="btn dac nho" data-ok="Giữ ẩn 3 ảnh mờ">Giữ ẩn</button><button class="btn nho" data-no>Xem lại 3 ảnh</button></div></div>
+    <div class="sg" data-sg><p><b>Gộp với mục Cuối tuần ở nhà?</b> Hai mục có chung 9 ảnh chụp ngày 11 tháng 7.</p><div><button class="btn dac nho" data-ok="Đã gộp hai mục">Gộp hai mục</button><button class="btn nho" data-no>Bỏ qua</button></div></div>
+  </section>
+
+  <section class="day">
+    <div class="day-h"><h2>Ngày 1</h2><p>Hà Nội đến Đà Lạt, đường đèo</p></div>
+    <div class="g g2"><figure class="p1"><img src="assets/photos/van-deo.jpg" alt="Chiếc xe dừng bên đường đèo" loading="lazy"></figure><figure><img src="assets/photos/cua-so-xe.jpg" alt="Su nhìn qua cửa sổ xe" loading="lazy"></figure><figure class="more"><img src="assets/photos/cho-xe.jpg" alt="" loading="lazy"><span>Thêm 61 ảnh</span></figure></div>
+  </section>
+  <section class="day">
+    <div class="day-h"><h2>Ngày 2</h2><p>Hồ buổi sáng, chợ đêm buổi tối</p></div>
+    <div class="g g3"><figure class="tall"><img src="assets/photos/da-ngoai-ho.jpg" alt="Hồ lúc sáng sớm" loading="lazy"></figure><figure><img src="assets/photos/bien-nui.jpg" alt="Bờ hồ và dãy núi" loading="lazy"></figure><figure><img src="assets/photos/da-ngoai-cho.jpg" alt="Gian hàng ở chợ" loading="lazy"></figure><figure class="more"><img src="assets/photos/van-deo.jpg" alt="" loading="lazy"><span>Thêm 94 ảnh</span></figure></div>
+  </section>
+  <section class="day">
+    <div class="day-h"><h2>Ngày 3</h2><p>Cà phê sáng, rồi về nhà</p></div>
+    <div class="g g2"><figure class="p1"><img src="assets/photos/cho-xe.jpg" alt="Chú chó ở quán cà phê" loading="lazy"></figure><figure><img src="assets/photos/da-ngoai-cho.jpg" alt="Chợ buổi sáng" loading="lazy"></figure><figure class="more"><img src="assets/photos/cua-so-xe.jpg" alt="" loading="lazy"><span>Thêm 51 ảnh</span></figure></div>
+  </section>
+</div>
+</main>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+ document.querySelector('.spark').innerHTML=icon('sparkle');
+ document.querySelectorAll('[data-sg]').forEach(c=>{
+  c.addEventListener('click',e=>{const ok=e.target.closest('[data-ok]'),no=e.target.closest('[data-no]');if(!ok&&!no)return;
+   c.classList.add('done');c.innerHTML='<p>'+(ok?'<b>Xong.</b> '+ok.dataset.ok+'.':'<b>Đã bỏ qua.</b> Mình sẽ không gợi ý lại.')+'</p><button class="btn nho" data-undo>Hoàn tác</button>';});
+ });
+ if(window.maplibregl&&!document.body.dataset.state){
+  const pts=[[108.44,11.94],[108.51,11.88],[108.44,12.04],[108.37,11.93]];
+  const m=new maplibregl.Map({container:'mini',attributionControl:false,center:[108.45,11.96],zoom:9.6,cooperativeGestures:true,
+   style:{version:8,sources:{e:{type:'raster',tileSize:256,tiles:['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}']}},layers:[{id:'e',type:'raster',source:'e'}]}});
+  m.on('load',()=>{m.addSource('r',{type:'geojson',data:{type:'Feature',geometry:{type:'LineString',coordinates:[[108.37,11.93],[108.44,11.94],[108.51,11.88],[108.44,12.04]]}}});
+   m.addLayer({id:'r',type:'line',source:'r',paint:{'line-color':'#FBD784','line-width':4,'line-dasharray':[2,1.5]}})});
+  const ph=['van-deo','da-ngoai-ho','cua-so-xe','da-ngoai-cho'];
+  pts.forEach((p,i)=>{const d=document.createElement('div');d.className='mk';d.style.backgroundImage='url(assets/photos/'+ph[i]+'.jpg)';new maplibregl.Marker({element:d}).setLngLat(p).addTo(m)});
+ }
+ document.addEventListener('click',e=>{if(e.target.closest('[data-undo]'))showToast('Đã hoàn tác. Bạn có thể tải lại trang để xem gợi ý.')});
+})();
+</script>
+</body>
+</html>

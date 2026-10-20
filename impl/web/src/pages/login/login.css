@@ -1,0 +1,300 @@
+/* Trang đăng nhập / đăng ký gia đình `/dang-nhap` (G5).
+   CSS riêng trong thư mục trang, không đụng `src/styles/` của cmd `w1:pP`. */
+
+.lg {
+  padding-top: 150px;
+  padding-bottom: 90px;
+}
+
+.lg-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 36px 34px;
+  border-radius: 32px;
+  background: rgba(255, 248, 251, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--bong);
+}
+
+.lg-head h1 {
+  font-size: 40px;
+  line-height: 1.12;
+  margin: 8px 0 12px;
+}
+
+.lg-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--tim-khoi);
+  font: 500 13px/1.4 var(--font);
+}
+
+.lg-kicker svg {
+  color: var(--vang);
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lg-head > p {
+  color: #5e3a63;
+  max-width: 34em;
+}
+
+/* Hai tab */
+.lg-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  margin: 24px 0 20px;
+  border-radius: 999px;
+  background: rgba(74, 31, 79, 0.09);
+}
+
+.lg-tab {
+  min-height: 44px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--tim-khoi);
+  font: 600 14px/1 var(--btn);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.lg-tab:hover {
+  color: var(--man);
+}
+
+.lg-tab.is-on {
+  background: #fff;
+  color: var(--man);
+  box-shadow: 0 6px 16px -10px rgba(74, 31, 79, 0.5);
+}
+
+/* Biểu mẫu */
+.lg-form {
+  display: grid;
+  gap: 16px;
+}
+
+.lg-field {
+  display: grid;
+  gap: 6px;
+}
+
+/* Hai cột khi đủ chỗ: màn hình máy tính không phải cuộn mới thấy nút gửi */
+.lg-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 761px) {
+  .lg-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 18px;
+  }
+}
+
+.lg-field label {
+  font: 600 13px/1.4 var(--font);
+  letter-spacing: 0.4px;
+  color: var(--man);
+}
+
+.lg-field input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 14px;
+  border: 1.5px solid rgba(74, 31, 79, 0.16);
+  background: #fff;
+  color: var(--man);
+  font: 500 16px/1.4 var(--font);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.lg-field input::placeholder {
+  color: #b79ab9;
+  font-weight: 400;
+}
+
+.lg-field input:focus {
+  outline: none;
+  border-color: var(--man);
+  box-shadow: 0 0 0 3px rgba(74, 31, 79, 0.14);
+}
+
+.lg-field.has-error input {
+  border-color: #c0392b;
+  background: #fff6f8;
+}
+
+.lg-field-error {
+  margin: 0;
+  color: #a8324f;
+  font-size: 13px;
+}
+
+.lg-field-hint {
+  margin: 0;
+  color: var(--tim-khoi);
+  font-size: 12.5px;
+}
+
+.lg-submit {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 4px;
+}
+
+.lg-submit:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+/* Thông báo lỗi chung (sai mật khẩu, email đã có người dùng…) */
+.lg-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #ffe6ed;
+  border: 1px solid #f3bccb;
+  color: #7c1f38;
+  font-size: 14px;
+}
+
+.lg-alert svg {
+  flex: none;
+  margin-top: 3px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lg-switch {
+  margin: 2px 0 0;
+  text-align: center;
+  color: var(--tim-khoi);
+  font-size: 14px;
+}
+
+.lg-switch button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--man);
+  font: 600 14px/1.4 var(--font);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.lg-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  color: var(--tim-khoi);
+  font-size: 12.5px;
+}
+
+.lg-hint svg {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+/* Đã đăng nhập sẵn */
+.lg-welcome {
+  text-align: center;
+  max-width: 560px;
+}
+
+.lg-badge {
+  display: inline-grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: #bfe8d6;
+  color: #2e6b4f;
+}
+
+.lg-badge svg {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lg-welcome h1 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.lg-welcome-text {
+  color: #5e3a63;
+  max-width: 32em;
+  margin: 0 auto;
+}
+
+.lg-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+@media (max-width: 760px) {
+  .lg {
+    padding-top: 118px;
+    padding-bottom: 56px;
+  }
+
+  .lg-card {
+    padding: 26px 18px 24px;
+    border-radius: 24px;
+  }
+
+  .lg-head h1 {
+    font-size: 30px;
+  }
+
+  .lg-tabs {
+    margin: 20px 0 18px;
+  }
+
+  .lg-tab {
+    font-size: 13px;
+    padding: 0 8px;
+  }
+
+  .lg-field input {
+    height: 46px;
+    font-size: 16px;
+  }
+
+  .lg-welcome h1 {
+    font-size: 28px;
+  }
+}

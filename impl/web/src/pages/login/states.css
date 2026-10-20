@@ -1,0 +1,139 @@
+/* Trạng thái tải / rỗng / lỗi dùng chung cho các trang nhóm B (G5).
+   Không sửa `src/styles/` (vùng của w1:pP) — chỉ dùng token trong `src/styles/base.css`. */
+
+.b-loading {
+  padding: 8px 0 24px;
+}
+
+.b-loading-title {
+  height: 44px;
+  width: min(340px, 72%);
+}
+
+.b-loading-line {
+  height: 16px;
+  margin-top: 14px;
+  width: min(520px, 92%);
+  border-radius: 999px;
+}
+
+.b-loading-line:last-of-type {
+  width: min(400px, 70%);
+}
+
+.b-loading-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.b-loading-grid.is-1 {
+  grid-template-columns: minmax(0, 420px);
+}
+
+.b-loading-grid.is-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.b-loading-grid > .sk {
+  height: 220px;
+}
+
+/* Hộp rỗng / lỗi */
+.b-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 30px 24px;
+  border-radius: var(--r-lon);
+  background: var(--kinh);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: var(--bong-nhe);
+}
+
+.b-state.is-page {
+  max-width: 600px;
+  margin: 40px auto 60px;
+  padding: 44px 32px;
+  box-shadow: var(--bong);
+}
+
+.b-state-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--vang);
+  color: var(--man);
+  margin-bottom: 8px;
+}
+
+.b-state-icon svg {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.b-state-error .b-state-icon {
+  background: #ffe0e8;
+  color: #a8324f;
+}
+
+.b-state h2 {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+}
+
+.b-state.is-page h2 {
+  font-size: 28px;
+}
+
+.b-state p {
+  color: var(--tim-khoi);
+  max-width: 42em;
+}
+
+.b-state-action {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+@media (max-width: 760px) {
+  .b-loading-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .b-loading-grid.is-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .b-loading-grid > .sk {
+    height: 150px;
+  }
+
+  .b-state {
+    padding: 24px 18px;
+  }
+
+  .b-state.is-page {
+    margin: 20px auto 40px;
+    padding: 32px 20px;
+  }
+
+  .b-state h2,
+  .b-state.is-page h2 {
+    font-size: 22px;
+  }
+}

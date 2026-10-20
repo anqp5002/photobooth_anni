@@ -1,0 +1,89 @@
+/* Dòng thời gian r2 — khung cho F5 (cuộn theo tháng/ngày, lưới ảnh bo tròn). */
+
+.tl-month {
+  position: relative;
+  padding: 40px 0 12px;
+}
+
+.tl-month-head {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 0 12px;
+  background: linear-gradient(180deg, var(--hong-giay) 62%, rgba(255, 228, 239, 0));
+}
+
+.tl-month-head h2 {
+  font-size: 28px;
+}
+
+.tl-month-head span {
+  color: var(--tim-khoi);
+  font-size: 14px;
+}
+
+.tl-day {
+  margin-bottom: 28px;
+}
+
+.tl-day-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: var(--tim-khoi);
+  font-size: 14px;
+}
+
+.tl-day-head b {
+  font: 600 18px/1.3 var(--head);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--man);
+}
+
+.tl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.tl-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-nho);
+  box-shadow: var(--bong-nhe);
+  transition: transform 0.3s;
+}
+
+.tl-item:hover {
+  transform: translateY(-4px);
+}
+
+.tl-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.tl-item figcaption {
+  padding: 10px 12px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--man);
+  background: var(--hong-sua);
+}
+
+@media (max-width: 760px) {
+  .tl-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .tl-month {
+    padding-top: 24px;
+  }
+}

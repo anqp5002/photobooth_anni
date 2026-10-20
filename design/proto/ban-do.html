@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bản đồ kỷ niệm - Hành Trình</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Inter:wght@400;500;600&family=Be+Vietnam+Pro:wght@700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/map.css">
+</head>
+<body data-page="map" class="mapbody">
+<main id="main" data-empty-title="Chưa có ảnh nào có vị trí" data-empty-text="Chụp ảnh khi bật định vị, hoặc tải ảnh có tọa độ lên. Nơi nào nhà mình đã đến sẽ hiện trên bản đồ.">
+<div id="map" class="content" aria-label="Bản đồ vệ tinh các nơi nhà mình đã đến"></div>
+<aside class="panel kinh content" id="panel" aria-label="Bộ lọc và danh sách nơi">
+  <button class="grab" id="grab" aria-label="Kéo lên hoặc xuống để xem danh sách" aria-expanded="false"><i></i></button>
+  <h1>Bản đồ kỷ niệm</h1>
+  <p class="sub"><span id="cnt">9 nơi</span> nhà mình đã đến</p>
+  <div class="fg" role="group" aria-label="Lọc theo năm"><b>Năm</b><div class="chips" id="years"></div></div>
+  <div class="fg" role="group" aria-label="Lọc theo mục"><b>Mục</b><div class="chips" id="cats"></div></div>
+  <ul class="places" id="list"></ul>
+</aside>
+<article class="viewer content" id="viewer" hidden aria-live="polite"></article>
+<span class="credit content">Ảnh vệ tinh: Esri</span>
+</main>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+ const P=[
+  {id:'hn',n:'Nhà mình, Hà Nội',c:'nam',y:[2024,2025,2026],ll:[105.85,21.03],img:'phong-khach',k:212,d:'Quanh năm',g:1},
+  {id:'ht',n:'Hồ Tây',c:'nam',y:[2025,2026],ll:[105.82,21.07],img:'bo-con-doc',k:48,d:'Tháng 4 và tháng 10',g:1},
+  {id:'bv',n:'Ba Vì',c:'nam',y:[2026],ll:[105.42,21.08],img:'bo-con-mua',k:39,d:'Tháng 6',g:1},
+  {id:'dm',n:'Đồng Mô',c:'nam',y:[2025],ll:[105.46,21.02],img:'me-con-banh',k:27,d:'Tháng 11, 2025',g:1},
+  {id:'ep',n:'Ecopark',c:'nam',y:[2026],ll:[105.94,20.99],img:'be-cuoi',k:31,d:'Tháng 9',g:1},
+  {id:'ys',n:'Công viên Yên Sở',c:'nam',y:[2026],ll:[105.86,20.95],img:'hero-chay',k:15,d:'Tháng 5',g:1},
+  {id:'nd',a:'top-left',n:'Quê nội, Nam Định',c:'tet',y:[2025,2026],ll:[106.17,20.42],img:'giao-thua',k:164,d:'Tháng 2'},
+  {id:'dl',a:'right',n:'Đà Lạt',c:'dl',y:[2026],ll:[108.44,11.94],img:'da-ngoai-ho',k:236,d:'Tháng 7'},
+  {id:'nt',a:'left',n:'Nha Trang',c:'nt',y:[2026],ll:[109.19,12.24],img:'di-bien',k:187,d:'Tháng 8'}];
+ const C={nam:'Cuối tuần ở nhà',tet:'Tết ở quê nội',dl:'Hè ở Đà Lạt',nt:'Biển Nha Trang'};
+ const st={year:'all',cat:'all'};
+ const yEl=document.getElementById('years'),cEl=document.getElementById('cats'),list=document.getElementById('list'),viewer=document.getElementById('viewer'),panel=document.getElementById('panel');
+ const chip=(el,k,l,set)=>{const b=document.createElement('button');b.className='chip2';b.textContent=l;b.dataset.k=k;b.setAttribute('aria-pressed','false');b.onclick=()=>{set(k);render()};el.appendChild(b)};
+ [['all','Tất cả'],[2024,'2024'],[2025,'2025'],[2026,'2026']].forEach(a=>chip(yEl,a[0],a[1],k=>st.year=k));
+ [['all','Tất cả']].concat(Object.entries(C)).forEach(a=>chip(cEl,a[0],a[1],k=>st.cat=k));
+ const vis=p=>(st.year=='all'||p.y.includes(+st.year))&&(st.cat=='all'||p.c==st.cat);
+ const ok=document.body.dataset.state;
+ let map,mk={},agg;
+ const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ function render(){
+  [yEl,cEl].forEach(el=>el.querySelectorAll('button').forEach(b=>{const on=String(b.dataset.k)==String(el===yEl?st.year:st.cat);b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)}));
+  const v=P.filter(vis);document.getElementById('cnt').textContent=v.length+' nơi';
+  list.innerHTML=v.length?v.map(p=>'<li><button data-id="'+p.id+'"><img src="assets/photos/'+p.img+'.jpg" alt=""><span><b>'+p.n+'</b><small>'+p.d+', '+p.k+' ảnh</small></span></button></li>').join(''):'<li class="none">Không có nơi nào khớp bộ lọc này. Thử chọn "Tất cả".</li>';
+  if(map)updateMarkers();
+ }
+ list.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const p=P.find(x=>x.id==b.dataset.id);open(p,true)});
+ function open(p,fly){
+  viewer.hidden=false;
+  viewer.innerHTML='<button class="x" aria-label="Đóng thẻ ảnh">'+icon('x')+'</button><img src="assets/photos/'+p.img+'.jpg" alt="Ảnh tại '+p.n+'"><div><h2>'+p.n+'</h2><p>'+p.d+', '+p.k+' ảnh, '+(p.c=='nam'?'mục '+C.nam:'mục '+C[p.c])+'</p><a class="btn dac nho" href="muc.html">Xem mục này</a></div>';
+  viewer.querySelector('.x').onclick=()=>viewer.hidden=true;
+  if(fly&&map)map.flyTo({center:p.ll,zoom:p.g?10:8.5,duration:reduce?0:1400});
+  panel.classList.remove('open');
+ }
+ const GN={ll:[105.85,21.03],k:372};
+ function mkEl(p,count){const d=document.createElement('button');d.className='mk';d.style.backgroundImage='url(assets/photos/'+p.img+'.jpg)';d.setAttribute('aria-label',p.n);d.innerHTML='<i>'+count+'</i>';d.onclick=e=>{e.stopPropagation();open(p,false)};return d}
+ function updateMarkers(){
+  Object.values(mk).forEach(m=>m.remove());mk={};
+  const z=map.getZoom();
+  P.filter(vis).forEach(p=>{
+   if(p.g&&z<8)return;
+   mk[p.id]=new maplibregl.Marker({element:mkEl(p,p.k),anchor:p.a||'center'}).setLngLat(p.ll).addTo(map);
+  });
+  if(z<8){const gs=P.filter(p=>p.g&&vis(p));if(gs.length){const t=gs.reduce((a,p)=>a+p.k,0);const g={...gs[0],id:'hnx',n:'Hà Nội và quanh đó',k:t,d:gs.length+' nơi'};mk.hnx=new maplibregl.Marker({element:mkEl(g,t),anchor:'bottom-right'}).setLngLat([105.85,21.03]).addTo(map)}}
+ }
+ render();
+ if(ok||!window.maplibregl){return}
+ map=new maplibregl.Map({container:'map',attributionControl:false,center:window.innerWidth<760?[107.6,17.2]:[106.3,17.9],zoom:window.innerWidth<760?4.6:5.3,minZoom:3,
+  style:{version:8,sources:{e:{type:'raster',tileSize:256,tiles:['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}']}},layers:[{id:'e',type:'raster',source:'e'}]}});
+ map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
+ map.on('load',updateMarkers);map.on('zoomend',updateMarkers);
+ map.on('click',()=>viewer.hidden=true);
+ // tấm kéo trên điện thoại
+ const g=document.getElementById('grab');
+ g.onclick=()=>{const o=panel.classList.toggle('open');g.setAttribute('aria-expanded',o)};
+ let y0=null;g.addEventListener('touchstart',e=>y0=e.touches[0].clientY,{passive:true});
+ g.addEventListener('touchend',e=>{if(y0===null)return;const dy=e.changedTouches[0].clientY-y0;if(Math.abs(dy)>30){panel.classList.toggle('open',dy<0);g.setAttribute('aria-expanded',dy<0)}y0=null});
+})();
+</script>
+</body>
+</html>

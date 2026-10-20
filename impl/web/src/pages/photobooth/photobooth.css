@@ -1,0 +1,229 @@
+/* Trang photobooth `/photobooth` (G4) — nằm trong `pages/photobooth/` để không đụng
+   `src/styles/` (vùng của w1:pP). Token lấy từ bản mẫu (`src/styles/base.css`). */
+
+.pb {
+  padding-top: 150px;
+  padding-bottom: 90px;
+}
+
+/* ---------- Khối mở đầu: ảnh thật + chữ serif trắng (STYLE_r2: story/photobooth) ---------- */
+.pb-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-lon);
+  min-height: 260px;
+  display: flex;
+  align-items: flex-end;
+  padding: 34px 40px;
+  background: linear-gradient(160deg, #f7dff0, #efd7f7 55%, #ffe6c9);
+  box-shadow: var(--bong);
+  isolation: isolate;
+}
+
+.pb-hero.co-anh {
+  color: #fff;
+}
+
+.pb-hero__anh {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.pb-hero.co-anh::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(46, 18, 50, 0.42) 0%, rgba(46, 18, 50, 0.9) 100%);
+}
+
+.pb-hero__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font: 600 11px/1 var(--font);
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  background: var(--vang-nang);
+  color: #3a2233;
+  margin-bottom: 14px;
+}
+
+.pb-hero__tieu {
+  font-family: var(--serif);
+  font-size: 46px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 500;
+  max-width: 780px;
+}
+
+.pb-hero__tieu em {
+  font-style: italic;
+  color: var(--vang-nang);
+}
+
+.pb-hero:not(.co-anh) .pb-hero__tieu em {
+  color: var(--tim-khoi);
+}
+
+.pb-hero__phu {
+  margin-top: 12px;
+  font: 500 14px/22px var(--font);
+  letter-spacing: 0.4px;
+  max-width: 620px;
+  opacity: 0.92;
+}
+
+.pb-hero__nut {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.pb-hero__nut .btn.kinh {
+  color: var(--man);
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.pb-hero__nut .btn.kinh svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Thông báo đã lưu ---------- */
+.pb-toast {
+  margin: 18px 0 0;
+  padding: 12px 18px;
+  border-radius: var(--r-nho);
+  background: rgba(246, 196, 69, 0.24);
+  border: 1px solid rgba(246, 196, 69, 0.6);
+  font-size: 15px;
+}
+
+.pb-toast a {
+  color: var(--man);
+  font-weight: 600;
+}
+
+/* ---------- Vùng gắn module photobooth ---------- */
+.pb-host {
+  margin-top: 26px;
+}
+
+/* Module tự lo giao diện; ở đây bỏ nền/bo góc riêng để hoà vào nền pastel của trang. */
+.pb-host .htpb {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/* ---------- Đang tải ---------- */
+.pb-dang-tai {
+  margin-top: 26px;
+  padding: 28px;
+  border-radius: var(--r-lon);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: var(--bong-nhe);
+  display: grid;
+  gap: 12px;
+}
+
+.pb-dang-tai p {
+  color: var(--tim-khoi);
+  font-size: 14px;
+}
+
+.pb-skel {
+  display: block;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 214, 232, 0.9), rgba(255, 255, 255, 0.7));
+  background-size: 200% 100%;
+  animation: pb-skel 1.4s ease-in-out infinite;
+}
+
+.pb-skel--rong {
+  height: 120px;
+  border-radius: var(--r-nho);
+}
+
+.pb-skel--ngan {
+  width: 45%;
+}
+
+@keyframes pb-skel {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* ---------- Lỗi ---------- */
+.pb-loi {
+  margin-top: 26px;
+  padding: 30px;
+  border-radius: var(--r-lon);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(142, 90, 147, 0.28);
+  box-shadow: var(--bong-nhe);
+}
+
+.pb-loi h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.pb-loi p {
+  color: var(--tim-khoi);
+  max-width: 560px;
+}
+
+.pb-loi__nut {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+/* ---------- 390px ---------- */
+@media (max-width: 760px) {
+  .pb {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .pb-hero {
+    min-height: 220px;
+    padding: 24px 20px;
+    border-radius: var(--r-nho);
+  }
+
+  .pb-hero__tieu {
+    font-size: 30px;
+  }
+
+  .pb-hero__phu {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .pb-hero__nut .btn {
+    padding: 0 16px;
+  }
+}

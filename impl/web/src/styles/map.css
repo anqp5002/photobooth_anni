@@ -1,0 +1,51 @@
+/* Bản đồ toàn màn */
+body.mapbody{overflow:hidden;height:100vh;height:100dvh;background:#12303d}
+#map{position:fixed;inset:0;z-index:0}
+.panel{position:fixed;z-index:20;left:24px;top:200px;bottom:24px;width:360px;padding:26px 22px 18px;border-radius:var(--r-lon);border:1px solid rgba(255,255,255,.75);
+  box-shadow:var(--bong);display:flex;flex-direction:column;background:rgba(255,255,255,.58);overflow:hidden}
+.grab{display:none}
+.panel h1{font-size:28px}
+.sub{color:var(--tim-khoi);font-size:15px;margin:2px 0 18px}
+.fg{margin-bottom:14px}.fg b{display:block;font:600 14px var(--head);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip2{min-height:44px;padding:0 13px;border-radius:30px;border:1.5px solid var(--tim-khoi);background:rgba(255,255,255,.6);color:var(--man);font:700 12px var(--btn);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:.2s}
+.chip2:hover{background:#fff}
+.chip2.on{background:var(--man);border-color:var(--man);color:#fff}
+.places{list-style:none;padding:0;margin-top:6px;overflow:auto;flex:1;display:grid;gap:8px;align-content:start;padding-right:4px}
+.places button{width:100%;display:flex;gap:12px;align-items:center;text-align:left;padding:8px;border:0;border-radius:var(--r-nho);background:rgba(255,255,255,.72);cursor:pointer;font:inherit;color:var(--man);min-height:64px;transition:.2s}
+.places button:hover{background:#fff;transform:translateX(3px)}
+.places img{width:52px;height:52px;border-radius:14px;object-fit:cover;flex:none}
+.places b{display:block;font-size:15px;line-height:1.25}.places small{color:var(--tim-khoi);font-size:13px}
+.places .none{padding:16px;color:var(--tim-khoi);font-size:14px}
+
+/* `.mk` và `.credit` cũng có trong trang chủ (home.css) nên phải khoanh vùng
+   cho đúng trang bản đồ, tránh đè lên nhau trong SPA. */
+body.mapbody .mk{width:60px;height:60px;border-radius:50%;border:4px solid #fff;background-size:cover;background-position:center;box-shadow:0 8px 22px rgba(0,0,0,.5);cursor:pointer;padding:0;transition:transform .2s}
+body.mapbody .mk:hover{transform:scale(1.12)}
+body.mapbody .mk i{position:absolute;right:-8px;top:-8px;min-width:28px;height:28px;padding:0 6px;border-radius:999px;background:var(--vang);color:var(--man);font:700 13px/28px var(--font);text-align:center;border:2px solid #fff;font-style:normal}
+.viewer{position:fixed;z-index:25;right:24px;bottom:24px;width:340px;border-radius:var(--r-lon);overflow:hidden;background:#fff;box-shadow:var(--bong)}
+.viewer[hidden]{display:none}
+.viewer img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.viewer div{padding:16px 20px 20px}.viewer h2{font-size:20px;margin-bottom:4px}.viewer p{font-size:14px;color:var(--tim-khoi);margin-bottom:14px}
+.viewer .x{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.85);color:var(--man);cursor:pointer;display:grid;place-items:center}
+body.mapbody .credit{position:fixed;z-index:5;right:12px;bottom:4px;font-size:11px;color:#fff;text-shadow:0 1px 3px #000}
+.maplibregl-ctrl-top-right{top:200px}
+
+/* trạng thái trên nền tối */
+body.mapbody[data-state]{overflow:auto;background:linear-gradient(180deg,#FFE4EF,#FFEFF5)}
+body.mapbody[data-state] .panel,body.mapbody[data-state] .viewer{display:none}
+
+@media (max-width:760px){
+  .panel{left:8px;right:8px;top:auto;bottom:84px;width:auto;height:236px;padding:8px 16px 12px;border-radius:28px 28px 24px 24px;transition:height .35s cubic-bezier(.2,.7,.2,1)}
+  .panel.open{height:min(70vh,560px)}
+  .grab{display:flex;justify-content:center;align-items:center;width:100%;min-height:44px;border:0;background:none;cursor:pointer;margin-bottom:2px}
+  .grab i{width:44px;height:5px;border-radius:5px;background:var(--tim-khoi)}
+  .panel h1{font-size:20px}.sub{margin-bottom:8px;font-size:14px}
+  .fg{margin-bottom:8px}.fg b{display:none}
+  .chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}.chip2{flex:none}
+  .viewer{left:12px;right:12px;width:auto;bottom:336px;display:flex}
+  .viewer img{width:120px;aspect-ratio:1/1;flex:none}.viewer div{padding:12px 14px}.viewer h2{font-size:16px}.viewer p{font-size:13px;margin-bottom:8px}
+  .panel.open~.viewer{display:none}
+  body.mapbody .credit{bottom:84px;right:12px;top:auto}
+  .maplibregl-ctrl-top-right{top:120px}
+}

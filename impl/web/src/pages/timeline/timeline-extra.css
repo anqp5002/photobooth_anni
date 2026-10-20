@@ -1,0 +1,251 @@
+/* Phần bổ sung cho trang dòng thời gian (F5 → Z2M) — nằm trong `pages/timeline/`
+   để không đụng `src/styles/` (vùng của w1:pP). Token và lớp `.tl-*` lấy từ
+   `design/proto/assets/style.css` + `src/styles/timeline.css`.
+
+   Z2M: dòng thời gian dày theo chiều ngang — trong một tháng, các ngày là các ô của
+   lưới (nhiều ngày một hàng ở 1440, 2 cột ở 390), ô tự giãn để lấp hết bề ngang;
+   ảnh nổi bật (ai_score cao) to hơn. */
+
+.tlx {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+.tlx .head {
+  margin-bottom: 18px;
+}
+
+.tlx .head h2 {
+  font-size: var(--fs-h2);
+  margin-bottom: 8px;
+}
+
+.tlx .head p {
+  color: var(--tim-khoi);
+}
+
+/* Nhảy năm */
+.tlx-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.tlx-year {
+  min-height: var(--tap);
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--man);
+  background: transparent;
+  color: var(--man);
+  font: 600 13px/1 var(--head);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+
+.tlx-year:hover {
+  transform: translateY(-2px);
+}
+
+.tlx-year.on {
+  background: var(--man);
+  color: #fff;
+  box-shadow: 0 12px 26px -12px rgba(74, 31, 79, 0.6);
+}
+
+.tlx-date {
+  color: var(--tim-khoi);
+}
+
+/* Nhãn mục của ngày.
+   Không dùng lớp `.chip` của `home.css` — lớp đó `position:absolute` (nhãn ảnh r1)
+   nên nhãn mục sẽ bị nhảy khỏi luồng. */
+.tlx-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 12px;
+  border-radius: 999px;
+  font: 500 11px/1 var(--font);
+  letter-spacing: 0.4px;
+  text-transform: none;
+  text-decoration: none;
+  color: var(--man);
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.tlx-chip:hover {
+  background: #fff;
+}
+
+/* Tiêu đề tháng dính: băng nền tràn hết bề ngang (tiêu đề nằm ngoài `.wrap`),
+   nền kín hơn để không lộ vệt khi cuộn qua nền gradient của trang. */
+.tlx .tl-month-head {
+  display: block;
+  background: linear-gradient(180deg, rgba(255, 236, 244, 0.98) 72%, rgba(255, 236, 244, 0));
+}
+
+/* Tiêu đề tháng + thống kê trên một dòng (như bản mẫu). */
+.tlx .tl-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.tlx-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.tlx-more .btn[disabled] {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+/* ------------------------------------------------------------------ */
+/* Lưới tháng: các ngày xếp ngang, tự giãn để lấp hết bề ngang        */
+/* ------------------------------------------------------------------ */
+.tlx-mgrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 6px;
+}
+
+.tlx-day {
+  flex: 1 1 270px;
+  min-width: 0;
+}
+
+/* Ngày có ảnh nổi bật (ai_score cao) → ô rộng hơn, ảnh to hơn. */
+.tlx-day.hot {
+  flex: 2 1 430px;
+}
+
+.tlx-day-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tlx-day-head b {
+  font: 600 15px/1.2 var(--head);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--man);
+}
+
+.tlx-day-head .tlx-date {
+  font-size: 12px;
+}
+
+/* Lưới ảnh trong một ngày: ảnh điểm cao nhất tràn bề rộng, ảnh còn lại lưới nhỏ. */
+.tlx-day-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Ảnh còn lại của ngày: xếp một hàng, mỗi ảnh chiếm tối đa 1/3 ô. */
+.tlx-rest {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tlx-rest .tl-item {
+  flex: 1 1 112px;
+  min-width: 0;
+  max-width: 33.33%;
+}
+
+/* Lưới ảnh: bo góc tròn như bản mẫu, ảnh trong khung trắng (polaroid). */
+.tlx .tl-item {
+  background: #fff;
+  padding: 8px 8px 10px;
+  border-radius: var(--r-nho);
+  box-shadow: var(--bong-nhe);
+}
+
+.tlx .tl-item img {
+  border-radius: 12px;
+}
+
+/* Ảnh nổi bật của ngày: rộng hơn + viền vàng nhạt. */
+.tlx .tl-item.hero {
+  width: 100%;
+}
+
+.tlx .tl-item.hero img {
+  aspect-ratio: 16 / 9;
+  max-height: 430px;
+}
+
+.tlx .tl-item.hot img {
+  box-shadow: 0 0 0 3px rgba(246, 196, 69, 0.55);
+}
+
+.tlx .tl-item figcaption {
+  background: transparent;
+  border-radius: 0;
+  padding: 8px 4px 0;
+  text-align: center;
+  font-style: italic;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.35;
+  color: var(--man);
+}
+
+@media (max-width: 760px) {
+  .tlx {
+    padding-top: 120px;
+  }
+
+  .tlx .head h2 {
+    font-size: 28px;
+  }
+
+  /* 2 cột ở 390; ngày nổi bật có ảnh cao hơn (vùng ảnh lớn hơn). */
+  .tlx-mgrid {
+    gap: 12px;
+  }
+
+  .tlx-day {
+    flex: 1 1 calc(50% - 6px);
+  }
+
+  .tlx-day.hot {
+    flex: 1 1 calc(50% - 6px);
+  }
+
+  .tlx-rest .tl-item {
+    max-width: 100%;
+  }
+
+  .tlx .tl-item.hero img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .tlx .tl-item.hero.hot img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .tlx-day-head b {
+    font-size: 14px;
+  }
+
+  .tlx .tl-item figcaption {
+    font-size: 13px;
+  }
+}

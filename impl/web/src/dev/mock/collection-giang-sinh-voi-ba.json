@@ -1,0 +1,149 @@
+{
+  "id": "giang-sinh-voi-ba",
+  "kind": "holiday",
+  "title": "Giáng sinh với bà",
+  "summary": "Sáng Giáng sinh ở nhà bà, quà, nước ngọt và tiếng cười của Bin.",
+  "place": "Hà Nội",
+  "startAt": "2026-12-25T08:00:00+07:00",
+  "endAt": "2026-12-25T22:00:00+07:00",
+  "status": "accepted",
+  "cover": {
+    "id": "m-xmas-1",
+    "type": "photo",
+    "takenAt": "2026-12-25T09:30:00+07:00",
+    "place": "Hà Nội",
+    "country": "Việt Nam",
+    "lat": 21.03,
+    "lon": 105.85,
+    "caption": "Sáng Giáng sinh, bà mở bao quà cho các cháu.",
+    "tags": [
+      "giáng sinh",
+      "bà",
+      "quà",
+      "sáng",
+      "gia đình"
+    ],
+    "score": 9,
+    "collectionId": "giang-sinh-voi-ba",
+    "width": 960,
+    "height": 640,
+    "url": {
+      "sm": "/proto-photos/ba-chau.jpg",
+      "lg": "/proto-photos/ba-chau.jpg",
+      "orig": "/proto-photos/ba-chau.jpg"
+    },
+    "flags": {
+      "blurry": false,
+      "nearDuplicate": false,
+      "hidden": false
+    },
+    "aiStatus": "done"
+  },
+  "count": 70,
+  "members": [
+    {
+      "id": "m-tu-an",
+      "name": "Bố Tuấn",
+      "color": "#F6C445"
+    },
+    {
+      "id": "m-linh",
+      "name": "Mẹ Linh",
+      "color": "#FFC2DB"
+    },
+    {
+      "id": "m-su",
+      "name": "Su",
+      "color": "#D9C6FF"
+    },
+    {
+      "id": "m-bin",
+      "name": "Bin",
+      "color": "#BFE8D6"
+    },
+    {
+      "id": "m-ba",
+      "name": "Bà nội",
+      "color": "#FFC79B"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-12-25",
+      "media": [
+        {
+          "id": "m-xmas-1",
+          "type": "photo",
+          "takenAt": "2026-12-25T09:30:00+07:00",
+          "place": "Hà Nội",
+          "country": "Việt Nam",
+          "lat": 21.03,
+          "lon": 105.85,
+          "caption": "Sáng Giáng sinh, bà mở bao quà cho các cháu.",
+          "tags": [
+            "giáng sinh",
+            "bà",
+            "quà",
+            "sáng",
+            "gia đình"
+          ],
+          "score": 9,
+          "collectionId": "giang-sinh-voi-ba",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/ba-chau.jpg",
+            "lg": "/proto-photos/ba-chau.jpg",
+            "orig": "/proto-photos/ba-chau.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    }
+  ],
+  "route": [
+    {
+      "lat": 21.03,
+      "lon": 105.85
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "giang-sinh-voi-ba-sug-hide",
+      "type": "hide_blurry",
+      "text": "Ẩn 1 ảnh chụp mờ do đèn flash.",
+      "payload": {
+        "mediaIds": []
+      }
+    },
+    {
+      "id": "giang-sinh-voi-ba-sug-merge",
+      "type": "merge",
+      "text": "Gộp với mục Cuối tuần ở nhà? Cùng ở nhà bà.",
+      "payload": {
+        "intoId": "cuoi-tuan-o-nha"
+      }
+    },
+    {
+      "id": "giang-sinh-voi-ba-sug-split",
+      "type": "split",
+      "text": "Tách ảnh chụp riêng với bà ra thành mục riêng?",
+      "payload": {
+        "mediaId": "m-xmas-1"
+      }
+    },
+    {
+      "id": "giang-sinh-voi-ba-sug-rename",
+      "type": "rename",
+      "text": "Đổi tên mục thành \"Giáng sinh ở nhà bà\"?",
+      "payload": {
+        "title": "Giáng sinh ở nhà bà"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+/* Bổ sung nhỏ cho trang bản đồ (F4) — phần còn lại chép từ `design/proto/assets/map.css`. */
+
+/* Marker chưa có ảnh bìa (ảnh lỗi/không có cover). */
+.mk.mk-trong {
+  background: #6b4a72;
+}
+
+/* Tiêu đề tấm danh sách luôn tím đậm (body[data-page=map] đặt --hc = trắng cho header). */
+.panel h1 {
+  color: var(--man);
+}
+
+/* Ảnh bìa trong danh sách bị thiếu. */
+.places-anh-trong {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  flex: none;
+  background: rgba(142, 90, 147, 0.18);
+}
+
+/* Nhắc "Đang lọc…" khi đổi chip. */
+.map-hint {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--tim-khoi);
+}
+
+/* Thẻ ảnh: nút sang mục canh trái, không kéo hết chiều ngang. */
+.viewer .btn {
+  display: inline-flex;
+}
+
+/* `.open` là class của trang Tổng kết (`styles/recap.css`): cao 100vh, canh phải và có
+   lớp gradient tối phủ lên. Tấm danh sách bản đồ cũng mở bằng class này nên phải trả lại
+   đúng bố cục bản đồ — nếu không nửa dưới tấm bị gradient tối che, chữ không đọc được. */
+body.mapbody .panel.open {
+  position: fixed;
+  height: auto;
+  min-height: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+body.mapbody .panel.open::after {
+  content: none;
+}
+
+@media (max-width: 760px) {
+  .map-hint {
+    display: none;
+  }
+
+  /* Mở rộng tấm danh sách: nền trắng hơn để chữ đọc được khi bên dưới là biển tối. */
+  body.mapbody .panel.open {
+    height: min(70vh, 560px);
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}

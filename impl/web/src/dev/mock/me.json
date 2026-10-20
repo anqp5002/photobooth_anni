@@ -1,0 +1,13 @@
+{
+  "user": {
+    "id": "u-tu-an",
+    "username": "bo",
+    "displayName": "Bố Tuấn",
+    "avatarColor": "#F6C445"
+  },
+  "family": {
+    "id": "fam-bin-su",
+    "name": "Nhà Bin & Su",
+    "slug": "nha-bin-su"
+  }
+}

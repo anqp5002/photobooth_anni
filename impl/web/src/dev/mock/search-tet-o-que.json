@@ -1,0 +1,186 @@
+{
+  "query": "Tết ở quê",
+  "filters": {
+    "from": "2026-02-10",
+    "to": "2026-02-20",
+    "places": [
+      "Nam Định"
+    ],
+    "tags": [
+      "tết",
+      "pháo hoa",
+      "quà"
+    ],
+    "kinds": [
+      "tet"
+    ],
+    "members": [
+      "m-ba"
+    ]
+  },
+  "results": [
+    {
+      "id": "m-tet-1",
+      "type": "photo",
+      "takenAt": "2026-02-16T23:20:00+07:00",
+      "place": "Quê nội, Nam Định",
+      "country": "Việt Nam",
+      "lat": 20.42,
+      "lon": 106.17,
+      "caption": "Nửa đêm giao thừa, pháo hoa nổ ngay trên đầu cả làng.",
+      "tags": [
+        "pháo hoa",
+        "giao thừa",
+        "tết",
+        "đêm",
+        "làng quê"
+      ],
+      "score": 9,
+      "collectionId": "tet-que-noi",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/giao-thua.jpg",
+        "lg": "/proto-photos/giao-thua.jpg",
+        "orig": "/proto-photos/giao-thua.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    {
+      "id": "m-tet-2",
+      "type": "photo",
+      "takenAt": "2026-02-16T23:45:00+07:00",
+      "place": "Quê nội, Nam Định",
+      "country": "Việt Nam",
+      "lat": 20.42,
+      "lon": 106.18,
+      "caption": "Một vòng pháo hoa thứ hai, Su bịt tai cười toe.",
+      "tags": [
+        "pháo hoa",
+        "giao thừa",
+        "tết",
+        "su",
+        "gia đình"
+      ],
+      "score": 9,
+      "collectionId": "tet-que-noi",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/giao-thua-2.jpg",
+        "lg": "/proto-photos/giao-thua-2.jpg",
+        "orig": "/proto-photos/giao-thua-2.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": true,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    {
+      "id": "m-tet-3",
+      "type": "photo",
+      "takenAt": "2026-02-17T09:10:00+07:00",
+      "place": "Quê nội, Nam Định",
+      "country": "Việt Nam",
+      "lat": 20.41,
+      "lon": 106.16,
+      "caption": "Sáng mùng 1, quà Tết đặt trên bàn.",
+      "tags": [
+        "quà",
+        "tết",
+        "mùng 1",
+        "nhà nội",
+        "bàn"
+      ],
+      "score": 8,
+      "collectionId": "tet-que-noi",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/qua.jpg",
+        "lg": "/proto-photos/qua.jpg",
+        "orig": "/proto-photos/qua.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    }
+  ],
+  "collections": [
+    {
+      "id": "tet-que-noi",
+      "kind": "tet",
+      "title": "Tết ở quê nội",
+      "summary": "Ba ngày ở Nam Định: pháo hoa nửa đêm, quà Tết sáng mùng 1 và bàn ăn đầy người.",
+      "place": "Nam Định",
+      "startAt": "2026-02-16T06:30:00+07:00",
+      "endAt": "2026-02-18T20:00:00+07:00",
+      "status": "accepted",
+      "cover": {
+        "id": "m-tet-1",
+        "type": "photo",
+        "takenAt": "2026-02-16T23:20:00+07:00",
+        "place": "Quê nội, Nam Định",
+        "country": "Việt Nam",
+        "lat": 20.42,
+        "lon": 106.17,
+        "caption": "Nửa đêm giao thừa, pháo hoa nổ ngay trên đầu cả làng.",
+        "tags": [
+          "pháo hoa",
+          "giao thừa",
+          "tết",
+          "đêm",
+          "làng quê"
+        ],
+        "score": 9,
+        "collectionId": "tet-que-noi",
+        "width": 960,
+        "height": 640,
+        "url": {
+          "sm": "/proto-photos/giao-thua.jpg",
+          "lg": "/proto-photos/giao-thua.jpg",
+          "orig": "/proto-photos/giao-thua.jpg"
+        },
+        "flags": {
+          "blurry": false,
+          "nearDuplicate": false,
+          "hidden": false
+        },
+        "aiStatus": "done"
+      },
+      "count": 164,
+      "members": [
+        {
+          "id": "m-tu-an",
+          "name": "Bố Tuấn",
+          "color": "#F6C445"
+        },
+        {
+          "id": "m-linh",
+          "name": "Mẹ Linh",
+          "color": "#FFC2DB"
+        },
+        {
+          "id": "m-su",
+          "name": "Su",
+          "color": "#D9C6FF"
+        },
+        {
+          "id": "m-ba",
+          "name": "Bà nội",
+          "color": "#FFC79B"
+        }
+      ]
+    }
+  ]
+}

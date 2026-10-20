@@ -1,0 +1,17 @@
+{
+  "name": "hanh-trinh-tests",
+  "private": true,
+  "type": "module",
+  "description": "Test qa từ SPEC.md + MEGAPLAN_r1/r2.md (Hợp đồng API). Không đọc code impl/ để suy ra test.",
+  "scripts": {
+    "list": "playwright test --list",
+    "test": "playwright test",
+    "api": "node --test api/r2-contract.test.mjs",
+    "mock": "node mock-contract.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "jpeg-js": "^0.4.4",
+    "piexifjs": "^1.0.6"
+  }
+}

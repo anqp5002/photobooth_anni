@@ -1,0 +1,13 @@
+{
+  "query": "",
+  "filters": {
+    "from": null,
+    "to": null,
+    "places": [],
+    "tags": [],
+    "kinds": [],
+    "members": []
+  },
+  "results": [],
+  "collections": []
+}

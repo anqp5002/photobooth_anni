@@ -1,0 +1,328 @@
+{
+  "id": "he-da-lat",
+  "kind": "trip",
+  "title": "Hè ở Đà Lạt",
+  "summary": "Ba ngày hai đêm, chiếc xe bảy chỗ và rất nhiều sương.",
+  "place": "Đà Lạt",
+  "startAt": "2026-07-12T06:00:00+07:00",
+  "endAt": "2026-07-14T20:00:00+07:00",
+  "status": "accepted",
+  "cover": {
+    "id": "m-dl-4",
+    "type": "photo",
+    "takenAt": "2026-07-13T09:20:00+07:00",
+    "place": "Đà Lạt",
+    "country": "Việt Nam",
+    "lat": 11.94,
+    "lon": 108.44,
+    "caption": "Bờ hồ và dãy núi xanh thẫm sau lớp sương.",
+    "tags": [
+      "hồ",
+      "núi",
+      "đà lạt",
+      "phong cảnh",
+      "cả nhà"
+    ],
+    "score": 9,
+    "collectionId": "he-da-lat",
+    "width": 960,
+    "height": 638,
+    "url": {
+      "sm": "/proto-photos/bien-nui.jpg",
+      "lg": "/proto-photos/bien-nui.jpg",
+      "orig": "/proto-photos/bien-nui.jpg"
+    },
+    "flags": {
+      "blurry": false,
+      "nearDuplicate": false,
+      "hidden": false
+    },
+    "aiStatus": "done"
+  },
+  "count": 236,
+  "members": [
+    {
+      "id": "m-tu-an",
+      "name": "Bố Tuấn",
+      "color": "#F6C445"
+    },
+    {
+      "id": "m-linh",
+      "name": "Mẹ Linh",
+      "color": "#FFC2DB"
+    },
+    {
+      "id": "m-su",
+      "name": "Su",
+      "color": "#D9C6FF"
+    },
+    {
+      "id": "m-bin",
+      "name": "Bin",
+      "color": "#BFE8D6"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-07-12",
+      "media": [
+        {
+          "id": "m-dl-1",
+          "type": "photo",
+          "takenAt": "2026-07-12T10:40:00+07:00",
+          "place": "Đà Lạt",
+          "country": "Việt Nam",
+          "lat": 11.93,
+          "lon": 108.37,
+          "caption": "Xe dừng bên đường đèo, sương mù phủ kín kính xe.",
+          "tags": [
+            "đèo",
+            "xe",
+            "sương mù",
+            "đà lạt",
+            "di chuyển"
+          ],
+          "score": 8,
+          "collectionId": "he-da-lat",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/van-deo.jpg",
+            "lg": "/proto-photos/van-deo.jpg",
+            "orig": "/proto-photos/van-deo.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        },
+        {
+          "id": "m-dl-2",
+          "type": "photo",
+          "takenAt": "2026-07-12T11:15:00+07:00",
+          "place": "Đà Lạt",
+          "country": "Việt Nam",
+          "lat": 11.94,
+          "lon": 108.44,
+          "caption": "Su ngồi cạnh cửa sổ, nhìn xuống thung lũng.",
+          "tags": [
+            "cửa sổ",
+            "xe",
+            "su",
+            "đà lạt",
+            "phong cảnh"
+          ],
+          "score": 8,
+          "collectionId": "he-da-lat",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/cua-so-xe.jpg",
+            "lg": "/proto-photos/cua-so-xe.jpg",
+            "orig": "/proto-photos/cua-so-xe.jpg"
+          },
+          "flags": {
+            "blurry": true,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "media": [
+        {
+          "id": "m-dl-3",
+          "type": "photo",
+          "takenAt": "2026-07-13T06:50:00+07:00",
+          "place": "Đà Lạt",
+          "country": "Việt Nam",
+          "lat": 11.88,
+          "lon": 108.51,
+          "caption": "Hồ buổi sớm, hơi nước bảng lảng trên mặt nước.",
+          "tags": [
+            "hồ",
+            "sáng sớm",
+            "đà lạt",
+            "sương",
+            "phong cảnh"
+          ],
+          "score": 9,
+          "collectionId": "he-da-lat",
+          "width": 960,
+          "height": 1438,
+          "url": {
+            "sm": "/proto-photos/da-ngoai-ho.jpg",
+            "lg": "/proto-photos/da-ngoai-ho.jpg",
+            "orig": "/proto-photos/da-ngoai-ho.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        },
+        {
+          "id": "m-dl-4",
+          "type": "photo",
+          "takenAt": "2026-07-13T09:20:00+07:00",
+          "place": "Đà Lạt",
+          "country": "Việt Nam",
+          "lat": 11.94,
+          "lon": 108.44,
+          "caption": "Bờ hồ và dãy núi xanh thẫm sau lớp sương.",
+          "tags": [
+            "hồ",
+            "núi",
+            "đà lạt",
+            "phong cảnh",
+            "cả nhà"
+          ],
+          "score": 9,
+          "collectionId": "he-da-lat",
+          "width": 960,
+          "height": 638,
+          "url": {
+            "sm": "/proto-photos/bien-nui.jpg",
+            "lg": "/proto-photos/bien-nui.jpg",
+            "orig": "/proto-photos/bien-nui.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        },
+        {
+          "id": "m-dl-6",
+          "type": "photo",
+          "takenAt": "2026-07-13T19:30:00+07:00",
+          "place": "Đà Lạt",
+          "country": "Việt Nam",
+          "lat": 11.94,
+          "lon": 108.45,
+          "caption": "Gian hàng ở chợ đêm, Su thích cái bóng đèn lộn loạn.",
+          "tags": [
+            "chợ",
+            "đêm",
+            "đà lạt",
+            "đèn lồng",
+            "mua sắm"
+          ],
+          "score": 8,
+          "collectionId": "he-da-lat",
+          "width": 960,
+          "height": 652,
+          "url": {
+            "sm": "/proto-photos/da-ngoai-cho.jpg",
+            "lg": "/proto-photos/da-ngoai-cho.jpg",
+            "orig": "/proto-photos/da-ngoai-cho.jpg"
+          },
+          "flags": {
+            "blurry": false,
+            "nearDuplicate": false,
+            "hidden": false
+          },
+          "aiStatus": "done"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "media": [
+        {
+          "id": "m-dl-5",
+          "type": "photo",
+          "takenAt": "2026-07-14T08:05:00+07:00",
+          "place": "Đà Lạt",
+          "country": "Việt Nam",
+          "lat": 12.04,
+          "lon": 108.44,
+          "caption": "Chú chó ở quán cà phê đợi Su cho nó ăn.",
+          "tags": [
+            "chó",
+            "cà phê",
+            "sáng",
+            "đà lạt"
+          ],
+          "score": 6,
+          "collectionId": "he-da-lat",
+          "width": 960,
+          "height": 640,
+          "url": {
+            "sm": "/proto-photos/cho-xe.jpg",
+            "lg": "/proto-photos/cho-xe.jpg",
+            "orig": "/proto-photos/cho-xe.jpg"
+          },
+          "flags": {
+            "blurry": true,
+            "nearDuplicate": false,
+            "hidden": true
+          },
+          "aiStatus": "done"
+        }
+      ]
+    }
+  ],
+  "route": [
+    {
+      "lat": 11.93,
+      "lon": 108.37
+    },
+    {
+      "lat": 11.94,
+      "lon": 108.44
+    },
+    {
+      "lat": 11.88,
+      "lon": 108.51
+    },
+    {
+      "lat": 12.04,
+      "lon": 108.44
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "he-da-lat-sug-hide",
+      "type": "hide_blurry",
+      "text": "2 ảnh bị mờ đã được ẩn. Các ảnh chụp ở đèo Prenn bị rung tay.",
+      "payload": {
+        "mediaIds": [
+          "m-dl-2",
+          "m-dl-5"
+        ]
+      }
+    },
+    {
+      "id": "he-da-lat-sug-merge",
+      "type": "merge",
+      "text": "Gộp với mục Cuối tuần ở nhà? Hai mục có chung 9 ảnh chụp ngày 11 tháng 7.",
+      "payload": {
+        "intoId": "cuoi-tuan-o-nha"
+      }
+    },
+    {
+      "id": "he-da-lat-sug-split",
+      "type": "split",
+      "text": "Tách ngày 13 tháng 7 ra thành mục riêng?",
+      "payload": {
+        "mediaId": "m-dl-6"
+      }
+    },
+    {
+      "id": "he-da-lat-sug-rename",
+      "type": "rename",
+      "text": "Đổi tên mục thành \"Đà Lạt tháng 7\"?",
+      "payload": {
+        "title": "Đà Lạt tháng 7"
+      }
+    }
+  ]
+}

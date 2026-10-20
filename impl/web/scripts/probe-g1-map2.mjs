@@ -1,0 +1,14 @@
+﻿import puppeteer from 'puppeteer-core';
+const browser = await puppeteer.launch({ executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', headless: true, args: ['--no-sandbox'] });
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+const page = await browser.newPage();
+await page.setViewport({ width: 1440, height: 900 });
+await page.goto('http://localhost:5199/muc/he-da-lat', { waitUntil: 'networkidle2' });
+await wait(3000);
+await page.evaluate(() => document.querySelector('.muc-page .mapc')?.scrollIntoView({ block: 'center' }));
+await wait(3000);
+const el = await page.$('.muc-page .mapc');
+await el.screenshot({ path: 'D:/projects/hanh-trinh/shots/dev/g1-route-map.png' });
+const tiles = await page.evaluate(() => performance.getEntriesByType('resource').filter(r => r.name.includes('arcgisonline')).length);
+console.log('tile requests:', tiles);
+await browser.close();

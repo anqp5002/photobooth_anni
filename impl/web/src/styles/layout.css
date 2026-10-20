@@ -1,0 +1,37 @@
+/* Khung r2 — bổ sung cho CSS bản mẫu (design/proto/assets/*.css) khi dựng bằng React.
+   Nội dung này là của cmd (w1:pP), các trang thêm CSS riêng trong thư mục của mình. */
+
+/* Bản mẫu dùng body[data-state] để ẩn nội dung khi đang tải / rỗng / lỗi.
+   Ở React trạng thái được render trực tiếp nên khung trạng thái luôn hiện. */
+.state-view {
+  display: block;
+}
+
+/* Thanh thông báo: chữ dài ở khổ hẹp bị cắt cụt hai đầu.
+   Bọc chữ trong một khối riêng để dấu "…" hiện ở cuối, không tràn ra hai bên.
+   `padding-block` chừa chỗ cho dấu tiếng Việt vươn lên trên chữ in hoa
+   (É, Ớ, Ả, Ừ, Ộ…): dấu vươn khỏi khung chữ, thiếu chỗ là bị cắt mất.
+   Vì khối cao thêm 12px nên vị trí chữ vẫn y như bản mẫu (đều căn giữa trong
+   thanh 38px). */
+.ann-t {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  padding-block: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Nội dung trang không có hero riêng thì chừa chỗ cho header trong suốt
+   (bản mẫu dùng padding-top:160px trên muc.html). */
+.page-body {
+  padding-top: 160px;
+}
+
+@media (max-width: 760px) {
+  .page-body {
+    padding-top: 124px;
+  }
+}

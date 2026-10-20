@@ -1,0 +1,126 @@
+/* Hành Trình r2: token dùng chung */
+:root{
+  --hong-giay:#FFE4EF; --hong-sua:#FFF4F8; --man:#4A1F4F; --tim-khoi:#8E5A93; --vang:#F6C445;
+  --dem:#0B1D26; --vang-nang:#FBD784;
+  --font:'Inter',system-ui,sans-serif; --head:'Oswald','Arial Narrow',sans-serif; --btn:'Be Vietnam Pro','Inter',sans-serif; --serif:'Playfair Display',Georgia,serif;
+  --r-lon:28px; --r-nho:20px; --r-pol:6px;
+  --bong:0 24px 60px -24px rgba(74,31,79,.35);
+  --bong-nhe:0 10px 30px -14px rgba(74,31,79,.28);
+  --bong-pol:0 18px 40px -12px rgba(74,31,79,.38), 0 2px 6px rgba(74,31,79,.12);
+  --kinh:rgba(255,255,255,.55);
+  --gutter:24px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{position:relative;font:400 16px/26px var(--font);letter-spacing:.2px;color:var(--man);min-height:100vh;overflow-x:hidden;
+  background:
+   radial-gradient(55% 45% at 92% 2%,#FFC9E0 0,transparent 70%),
+   radial-gradient(45% 35% at 0% 22%,#E6D8FF 0,transparent 70%),
+   radial-gradient(40% 30% at 100% 52%,#FFEDB8 0,transparent 70%),
+   radial-gradient(50% 30% at 10% 80%,#FFD9E8 0,transparent 70%),
+   linear-gradient(180deg,#FFE4EF,#FFEFF5 50%,#FFE4EF);
+  background-color:var(--hong-giay)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.15;letter-spacing:1.5px;text-transform:uppercase}
+:focus-visible{outline:3px solid var(--man);outline-offset:3px;border-radius:8px}
+.dark :focus-visible{outline-color:var(--vang-nang)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.sr:focus{width:auto;height:auto;clip:auto;z-index:300;background:#fff;padding:8px 14px;left:8px;top:8px;border-radius:8px}
+
+/* nút */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 30px;border-radius:30px;
+  font:700 13px/1 var(--btn);letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:1.5px solid var(--man);cursor:pointer;background:transparent;color:var(--man);
+  transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.dac{background:var(--man);color:#fff;box-shadow:0 12px 26px -10px rgba(74,31,79,.6)}
+.btn.vang{background:var(--vang-nang);border-color:var(--vang-nang);color:var(--dem)}
+.btn.nho{min-height:44px;padding:0 22px;font-size:12px}
+.btn.kinh{background:var(--kinh);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-color:rgba(255,255,255,.7)}
+.btn svg,.ic{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.kinh{background:var(--kinh);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+
+
+/* Header theo tinh than fortyspotted: thanh thong bao + header trong suot, khong dinh */
+:root{--hc:var(--man)}
+body[data-page=tk],body[data-page=map]{--hc:#fff}
+body[data-page=map][data-state]{--hc:var(--man)}
+.ann{height:38px;display:flex;align-items:center;justify-content:center;padding:0 16px;background:var(--man);color:#F9F3EC;font:500 11px/1 var(--font);letter-spacing:1.8px;text-transform:uppercase;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:relative;z-index:41}
+body[data-page=tk] .ann{background:var(--dem);color:var(--vang-nang)}
+.hd{position:absolute;top:38px;left:0;right:0;z-index:40;color:var(--hc);background:none;border:0;box-shadow:none}
+body[data-page=map] .hd,body[data-page=tk] .hd{text-shadow:0 1px 10px rgba(0,0,0,.4)}
+body[data-page=map][data-state] .hd{text-shadow:none}
+.hd-row{display:grid;grid-template-columns:1fr auto;align-items:center;padding:14px 80px 0 65px}
+.hd-l{display:flex;align-items:center}
+.hd-l a{display:inline-flex;align-items:center;min-height:44px;padding:0 15px;font:600 13px/1 var(--head);letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;color:inherit;transition:opacity .2s ease-in-out;position:relative}
+.hd-l a:hover,.hd-r a:hover,.hd-r button:hover{opacity:.5}
+.hd-l a[aria-current=page]::after{content:"";position:absolute;left:15px;right:15px;bottom:3px;height:1.6px;background:currentColor}
+.hd-r{display:flex;align-items:center;gap:15px}
+.hd-r a,.hd-r button,.burger{width:44px;height:44px;display:grid;place-items:center;background:none;border:0;color:inherit;cursor:pointer;padding:0;transition:opacity .2s ease-in-out;text-decoration:none}
+.hd-r svg,.burger svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+.hd-r .av-i{width:30px;height:30px;border-radius:50%;border:1px solid currentColor;font:600 13px/1 var(--head);display:grid;place-items:center}
+.brand{grid-column:1/-1;grid-row:2;justify-self:center;display:flex;flex-direction:column;align-items:center;margin:2px 0 0;text-decoration:none;color:inherit;min-height:44px;padding:4px 12px}
+.brand b{font:600 40px/1 var(--head);letter-spacing:5px;text-transform:uppercase}
+.brand small{font:500 11px/1.6 var(--font);letter-spacing:2.4px;text-transform:uppercase;margin-top:6px}
+.burger,.hd-m{display:none}
+.scrim{position:fixed;inset:0;z-index:90;background:rgba(40,12,44,.5);opacity:0;pointer-events:none;transition:opacity .3s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;left:0;bottom:0;width:300px;z-index:100;background:#FFF4F8;color:var(--man);translate:-100% 0;transition:translate .3s ease;visibility:hidden;overflow:auto}
+.drawer.on{translate:0 0;visibility:visible}
+.drawer .dx{position:absolute;top:8px;right:8px;width:55px;height:55px;display:grid;place-items:center;background:none;border:0;color:var(--tim-khoi);cursor:pointer}
+.drawer .dx svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round}
+.drawer ul{list-style:none;padding:0;margin-top:64px;border-top:1px solid rgba(74,31,79,.18)}
+.drawer li a,.drawer li button{display:flex;align-items:center;width:100%;min-height:55px;padding:0 20px;border:0;border-bottom:1px solid rgba(74,31,79,.18);background:none;font:600 15px/1 var(--head);letter-spacing:2px;text-transform:uppercase;color:var(--man);text-decoration:none;cursor:pointer;text-align:left}
+.drawer li a[aria-current=page]{background:rgba(246,196,69,.25)}
+@media (max-width:900px){
+  .hd-row{padding:0 8px;min-height:90px;grid-template-columns:1fr auto 1fr}
+  .hd-l{display:none}
+  .burger{display:grid;width:55px;height:55px;grid-column:1;grid-row:1;justify-self:start}
+  .hd-r{grid-column:3;grid-row:1;justify-self:end;gap:0}.hd-r .hide-m{display:none}
+  .brand{grid-column:2;grid-row:1;margin:0;padding:0}
+  .brand b{font-size:26px;letter-spacing:3px}.brand small{display:none}
+}
+
+/* trạng thái */
+.state-view{display:none}
+body[data-state] main .content{display:none}
+body[data-state=loading] .state-view.sv-loading,body[data-state=empty] .state-view.sv-empty,body[data-state=error] .state-view.sv-error{display:block}
+.sv-box{max-width:560px;margin:180px auto 90px;text-align:center;padding:48px 32px;border-radius:var(--r-lon);background:var(--kinh);backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,.8);box-shadow:var(--bong)}
+.sv-box h2{font-size:28px;margin-bottom:10px}.sv-box p{margin-bottom:24px;color:var(--tim-khoi)}
+.sv-box .dot{width:72px;height:72px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:var(--vang)}
+.sv-box .dot svg{width:32px;height:32px;stroke:var(--man);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dark .sv-box{background:rgba(255,255,255,.07);border-color:rgba(251,215,132,.2);color:#fff}.dark .sv-box p{color:#CFC6B2}
+.dark .sv-box .btn.dac{background:var(--vang-nang);color:var(--dem);border-color:var(--vang-nang)}
+.sk{border-radius:var(--r-lon);background:linear-gradient(100deg,rgba(142,90,147,.12) 30%,rgba(255,255,255,.75) 50%,rgba(142,90,147,.12) 70%);background-size:300% 100%;animation:sh 1.4s linear infinite}
+.dark .sk{background:linear-gradient(100deg,rgba(255,255,255,.05) 30%,rgba(255,255,255,.14) 50%,rgba(255,255,255,.05) 70%);background-size:300% 100%}
+@keyframes sh{to{background-position:-300% 0}}
+.sk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+.sk-grid .sk{height:260px}
+
+.toast{position:fixed;left:50%;bottom:28px;font-weight:500;translate:-50% 20px;opacity:0;z-index:200;background:var(--man);color:#fff;padding:14px 22px;border-radius:999px;font-weight:500;
+  box-shadow:var(--bong);transition:.3s;pointer-events:none;max-width:calc(100% - 32px)}
+.toast.on{opacity:1;translate:-50% 0}
+
+/* polaroid */
+.pol{position:relative;background:#fff;padding:12px 12px 46px;border-radius:var(--r-pol);box-shadow:var(--bong-pol)}
+.pol img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+.pol figcaption{position:absolute;left:14px;right:14px;bottom:10px;font:italic 500 17px/1.2 var(--serif);letter-spacing:0;text-transform:none;color:var(--man);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.dialog-bg{position:fixed;inset:0;z-index:150;background:rgba(40,12,44,.55);backdrop-filter:blur(6px);display:none;place-items:center;padding:16px}
+.dialog-bg.on{display:grid}
+.dialog{background:var(--hong-sua);border-radius:var(--r-lon);padding:32px;max-width:560px;width:100%;box-shadow:var(--bong);position:relative;max-height:92vh;overflow:auto;color:var(--man)}
+.dialog h2{font-size:28px;margin-bottom:8px}.dialog p{color:var(--tim-khoi);margin-bottom:20px}
+.dialog .x{position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(74,31,79,.08);cursor:pointer;color:var(--man);display:grid;place-items:center}
+.drop{border:2px dashed var(--tim-khoi);border-radius:var(--r-nho);padding:36px 16px;text-align:center;background:#fff;margin-bottom:8px}
+.drop .ic{margin:0 auto;width:32px;height:32px}.drop p{margin:8px 0 16px}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+@media (max-width:760px){
+  :root{--gutter:16px}
+  .sk-grid{grid-template-columns:1fr}
+  .dialog{padding:24px 20px}
+  .toast{bottom:24px}
+}

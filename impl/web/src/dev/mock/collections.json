@@ -1,0 +1,467 @@
+[
+  {
+    "id": "tet-que-noi",
+    "kind": "tet",
+    "title": "Tết ở quê nội",
+    "summary": "Ba ngày ở Nam Định: pháo hoa nửa đêm, quà Tết sáng mùng 1 và bàn ăn đầy người.",
+    "place": "Nam Định",
+    "startAt": "2026-02-16T06:30:00+07:00",
+    "endAt": "2026-02-18T20:00:00+07:00",
+    "status": "accepted",
+    "cover": {
+      "id": "m-tet-1",
+      "type": "photo",
+      "takenAt": "2026-02-16T23:20:00+07:00",
+      "place": "Quê nội, Nam Định",
+      "country": "Việt Nam",
+      "lat": 20.42,
+      "lon": 106.17,
+      "caption": "Nửa đêm giao thừa, pháo hoa nổ ngay trên đầu cả làng.",
+      "tags": [
+        "pháo hoa",
+        "giao thừa",
+        "tết",
+        "đêm",
+        "làng quê"
+      ],
+      "score": 9,
+      "collectionId": "tet-que-noi",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/giao-thua.jpg",
+        "lg": "/proto-photos/giao-thua.jpg",
+        "orig": "/proto-photos/giao-thua.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    "count": 164,
+    "members": [
+      {
+        "id": "m-tu-an",
+        "name": "Bố Tuấn",
+        "color": "#F6C445"
+      },
+      {
+        "id": "m-linh",
+        "name": "Mẹ Linh",
+        "color": "#FFC2DB"
+      },
+      {
+        "id": "m-su",
+        "name": "Su",
+        "color": "#D9C6FF"
+      },
+      {
+        "id": "m-ba",
+        "name": "Bà nội",
+        "color": "#FFC79B"
+      }
+    ]
+  },
+  {
+    "id": "bin-tron-mot-tuoi",
+    "kind": "baby",
+    "title": "Bin tròn 1 tuổi",
+    "summary": "Ngày sinh nhật đầu tiên của Bin ở nhà: bánh chưa kịp cắt thì Bin đã cười.",
+    "place": "Hà Nội",
+    "startAt": "2026-03-08T08:00:00+07:00",
+    "endAt": "2026-03-08T21:00:00+07:00",
+    "status": "accepted",
+    "cover": {
+      "id": "m-baby-1",
+      "type": "photo",
+      "takenAt": "2026-03-08T10:05:00+07:00",
+      "place": "Hà Nội",
+      "country": "Việt Nam",
+      "lat": 21.03,
+      "lon": 105.85,
+      "caption": "Bin nở nước mắt xoay một vòng rồi cười toe.",
+      "tags": [
+        "bin",
+        "em bé",
+        "sinh nhật",
+        "cười",
+        "một tuổi"
+      ],
+      "score": 9,
+      "collectionId": "bin-tron-mot-tuoi",
+      "width": 960,
+      "height": 720,
+      "url": {
+        "sm": "/proto-photos/em-be.jpg",
+        "lg": "/proto-photos/em-be.jpg",
+        "orig": "/proto-photos/em-be.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    "count": 98,
+    "members": [
+      {
+        "id": "m-tu-an",
+        "name": "Bố Tuấn",
+        "color": "#F6C445"
+      },
+      {
+        "id": "m-linh",
+        "name": "Mẹ Linh",
+        "color": "#FFC2DB"
+      },
+      {
+        "id": "m-su",
+        "name": "Su",
+        "color": "#D9C6FF"
+      },
+      {
+        "id": "m-bin",
+        "name": "Bin",
+        "color": "#BFE8D6"
+      }
+    ]
+  },
+  {
+    "id": "sinh-nhat-su",
+    "kind": "birthday",
+    "title": "Sinh nhật Su 7 tuổi",
+    "summary": "Su thổi hết nến trong tiếng vỗ tay, rồi cả nhà ăn bánh tới tối.",
+    "place": "Hà Nội",
+    "startAt": "2026-05-02T14:00:00+07:00",
+    "endAt": "2026-05-02T22:30:00+07:00",
+    "status": "accepted",
+    "cover": {
+      "id": "m-bd-1",
+      "type": "photo",
+      "takenAt": "2026-05-02T16:30:00+07:00",
+      "place": "Hà Nội",
+      "country": "Việt Nam",
+      "lat": 21.03,
+      "lon": 105.85,
+      "caption": "Bánh sinh nhật Su, nến thắp lên là cả nhà im băng.",
+      "tags": [
+        "sinh nhật",
+        "bánh",
+        "nến",
+        "su",
+        "tiệc"
+      ],
+      "score": 9,
+      "collectionId": "sinh-nhat-su",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/banh-sn.jpg",
+        "lg": "/proto-photos/banh-sn.jpg",
+        "orig": "/proto-photos/banh-sn.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    "count": 121,
+    "members": [
+      {
+        "id": "m-tu-an",
+        "name": "Bố Tuấn",
+        "color": "#F6C445"
+      },
+      {
+        "id": "m-linh",
+        "name": "Mẹ Linh",
+        "color": "#FFC2DB"
+      },
+      {
+        "id": "m-su",
+        "name": "Su",
+        "color": "#D9C6FF"
+      },
+      {
+        "id": "m-bin",
+        "name": "Bin",
+        "color": "#BFE8D6"
+      }
+    ]
+  },
+  {
+    "id": "he-da-lat",
+    "kind": "trip",
+    "title": "Hè ở Đà Lạt",
+    "summary": "Ba ngày hai đêm, chiếc xe bảy chỗ và rất nhiều sương.",
+    "place": "Đà Lạt",
+    "startAt": "2026-07-12T06:00:00+07:00",
+    "endAt": "2026-07-14T20:00:00+07:00",
+    "status": "accepted",
+    "cover": {
+      "id": "m-dl-4",
+      "type": "photo",
+      "takenAt": "2026-07-13T09:20:00+07:00",
+      "place": "Đà Lạt",
+      "country": "Việt Nam",
+      "lat": 11.94,
+      "lon": 108.44,
+      "caption": "Bờ hồ và dãy núi xanh thẫm sau lớp sương.",
+      "tags": [
+        "hồ",
+        "núi",
+        "đà lạt",
+        "phong cảnh",
+        "cả nhà"
+      ],
+      "score": 9,
+      "collectionId": "he-da-lat",
+      "width": 960,
+      "height": 638,
+      "url": {
+        "sm": "/proto-photos/bien-nui.jpg",
+        "lg": "/proto-photos/bien-nui.jpg",
+        "orig": "/proto-photos/bien-nui.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    "count": 236,
+    "members": [
+      {
+        "id": "m-tu-an",
+        "name": "Bố Tuấn",
+        "color": "#F6C445"
+      },
+      {
+        "id": "m-linh",
+        "name": "Mẹ Linh",
+        "color": "#FFC2DB"
+      },
+      {
+        "id": "m-su",
+        "name": "Su",
+        "color": "#D9C6FF"
+      },
+      {
+        "id": "m-bin",
+        "name": "Bin",
+        "color": "#BFE8D6"
+      }
+    ]
+  },
+  {
+    "id": "bien-nha-trang",
+    "kind": "trip",
+    "title": "Biển Nha Trang",
+    "summary": "Bốn ngày ở Nha Trang, nước ấm và Su không chịu ra khỏi biển.",
+    "place": "Nha Trang",
+    "startAt": "2026-08-08T09:00:00+07:00",
+    "endAt": "2026-08-11T17:00:00+07:00",
+    "status": "accepted",
+    "cover": {
+      "id": "m-nt-1",
+      "type": "photo",
+      "takenAt": "2026-08-08T15:20:00+07:00",
+      "place": "Nha Trang",
+      "country": "Việt Nam",
+      "lat": 12.24,
+      "lon": 109.19,
+      "caption": "Cả nhà xuống biển lúc nắng chếch.",
+      "tags": [
+        "biển",
+        "nha trang",
+        "nắng",
+        "cả nhà",
+        "hè"
+      ],
+      "score": 9,
+      "collectionId": "bien-nha-trang",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/di-bien.jpg",
+        "lg": "/proto-photos/di-bien.jpg",
+        "orig": "/proto-photos/di-bien.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    "count": 187,
+    "members": [
+      {
+        "id": "m-tu-an",
+        "name": "Bố Tuấn",
+        "color": "#F6C445"
+      },
+      {
+        "id": "m-linh",
+        "name": "Mẹ Linh",
+        "color": "#FFC2DB"
+      },
+      {
+        "id": "m-su",
+        "name": "Su",
+        "color": "#D9C6FF"
+      },
+      {
+        "id": "m-bin",
+        "name": "Bin",
+        "color": "#BFE8D6"
+      }
+    ]
+  },
+  {
+    "id": "cuoi-tuan-o-nha",
+    "kind": "weekend",
+    "title": "Cuối tuần ở nhà",
+    "summary": "Những cuối tuần ở Hà Nội: bếp, phòng khách, Hồ Tây và mấy chuyến đi chỉ nửa ngày.",
+    "place": "Hà Nội",
+    "startAt": "2026-01-11T08:00:00+07:00",
+    "endAt": "2026-12-28T22:00:00+07:00",
+    "status": "accepted",
+    "cover": {
+      "id": "m-wk-4",
+      "type": "photo",
+      "takenAt": "2026-10-10T16:25:00+07:00",
+      "place": "Hồ Tây, Hà Nội",
+      "country": "Việt Nam",
+      "lat": 21.07,
+      "lon": 105.82,
+      "caption": "Bố đọc truyện cho con nghe bên cửa sổ Hồ Tây.",
+      "tags": [
+        "hồ tây",
+        "bố",
+        "con gái",
+        "đọc truyện",
+        "cuối tuần"
+      ],
+      "score": 8,
+      "collectionId": "cuoi-tuan-o-nha",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/bo-con-doc.jpg",
+        "lg": "/proto-photos/bo-con-doc.jpg",
+        "orig": "/proto-photos/bo-con-doc.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    "count": 372,
+    "members": [
+      {
+        "id": "m-tu-an",
+        "name": "Bố Tuấn",
+        "color": "#F6C445"
+      },
+      {
+        "id": "m-linh",
+        "name": "Mẹ Linh",
+        "color": "#FFC2DB"
+      },
+      {
+        "id": "m-su",
+        "name": "Su",
+        "color": "#D9C6FF"
+      },
+      {
+        "id": "m-bin",
+        "name": "Bin",
+        "color": "#BFE8D6"
+      },
+      {
+        "id": "m-ba",
+        "name": "Bà nội",
+        "color": "#FFC79B"
+      }
+    ]
+  },
+  {
+    "id": "giang-sinh-voi-ba",
+    "kind": "holiday",
+    "title": "Giáng sinh với bà",
+    "summary": "Sáng Giáng sinh ở nhà bà, quà, nước ngọt và tiếng cười của Bin.",
+    "place": "Hà Nội",
+    "startAt": "2026-12-25T08:00:00+07:00",
+    "endAt": "2026-12-25T22:00:00+07:00",
+    "status": "accepted",
+    "cover": {
+      "id": "m-xmas-1",
+      "type": "photo",
+      "takenAt": "2026-12-25T09:30:00+07:00",
+      "place": "Hà Nội",
+      "country": "Việt Nam",
+      "lat": 21.03,
+      "lon": 105.85,
+      "caption": "Sáng Giáng sinh, bà mở bao quà cho các cháu.",
+      "tags": [
+        "giáng sinh",
+        "bà",
+        "quà",
+        "sáng",
+        "gia đình"
+      ],
+      "score": 9,
+      "collectionId": "giang-sinh-voi-ba",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/ba-chau.jpg",
+        "lg": "/proto-photos/ba-chau.jpg",
+        "orig": "/proto-photos/ba-chau.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    "count": 70,
+    "members": [
+      {
+        "id": "m-tu-an",
+        "name": "Bố Tuấn",
+        "color": "#F6C445"
+      },
+      {
+        "id": "m-linh",
+        "name": "Mẹ Linh",
+        "color": "#FFC2DB"
+      },
+      {
+        "id": "m-su",
+        "name": "Su",
+        "color": "#D9C6FF"
+      },
+      {
+        "id": "m-bin",
+        "name": "Bin",
+        "color": "#BFE8D6"
+      },
+      {
+        "id": "m-ba",
+        "name": "Bà nội",
+        "color": "#FFC79B"
+      }
+    ]
+  }
+]

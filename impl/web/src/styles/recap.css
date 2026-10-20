@@ -1,0 +1,116 @@
+/* Tổng kết: đêm điện ảnh */
+body.dark{background:radial-gradient(70% 40% at 80% 0,#14323f 0,transparent 70%),radial-gradient(60% 30% at 0 60%,#15283a 0,transparent 70%),var(--dem);color:#F6EEDD}
+.dark main{padding-top:0}
+
+.open{position:relative;height:100vh;min-height:620px;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.open::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,29,38,.35) 0,transparent 25%,transparent 45%,rgba(11,29,38,.85) 85%,var(--dem) 100%)}
+.open-bg{position:absolute;inset:-4% 0 0;width:100%;height:104%;object-fit:cover;object-position:center 30%;will-change:transform;transform-origin:center 30%}
+.open-t{position:relative;z-index:2;text-align:center;padding:0 var(--gutter) 64px;max-width:980px;will-change:transform}
+.open h1{font-size:72px;line-height:1.1;color:#fff;text-shadow:0 4px 40px rgba(0,0,0,.45);text-wrap:balance}
+.open p{font:italic 500 clamp(18px,1.6vw,22px)/1.5 var(--serif);color:var(--vang-nang);margin:22px auto 0;max-width:34em}
+.down{display:inline-flex;flex-direction:column;align-items:center;gap:6px;margin-top:34px;min-height:44px;font:700 12px var(--btn);letter-spacing:2px;text-transform:uppercase;color:#F6EEDD;text-decoration:none}
+.down .ic{animation:nhun 2s ease-in-out infinite}
+@keyframes nhun{50%{transform:translateY(6px)}}
+
+.nums{padding:72px 0 40px}
+.nums .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(251,215,132,.3);border-bottom:1px solid rgba(251,215,132,.3)}
+.nums .wrap>div{padding:36px 12px;text-align:center}
+.nums .wrap>div+div{border-left:1px solid rgba(251,215,132,.18)}
+.nums b{display:block;font:600 clamp(56px,6vw,88px)/1 var(--head);letter-spacing:2px;color:var(--vang-nang)}
+.nums span{display:block;margin-top:10px;color:#CFC6B2;font-size:15px}
+
+/* thanh chương bên phải */
+.rail{position:fixed;right:22px;top:50%;translate:0 -50%;z-index:70;display:flex;flex-direction:column;gap:2px;opacity:0;pointer-events:none;transition:opacity .4s}
+.rail.show{opacity:1;pointer-events:auto}
+.rail a{display:flex;align-items:center;justify-content:flex-end;gap:12px;min-height:44px;min-width:44px;text-decoration:none;color:#F6EEDD;font:600 12px var(--head);letter-spacing:1.5px;text-transform:uppercase}
+.rail a span{opacity:0;translate:8px 0;transition:.25s;background:rgba(11,29,38,.8);padding:6px 12px;border-radius:999px;white-space:nowrap;pointer-events:none}
+.rail a:hover span,.rail a:focus-visible span,.rail a.on span{opacity:1;translate:0 0}
+.rail i{width:10px;height:10px;border-radius:50%;border:2px solid var(--vang-nang);margin-right:17px;transition:.25s;flex:none}
+.rail a.on i{background:var(--vang-nang);height:26px;border-radius:6px}
+
+.ch{position:relative;padding:120px 0;overflow:hidden}
+.ghost{position:absolute;top:50%;translate:0 -50%;font:600 clamp(200px,28vw,420px)/1 var(--head);letter-spacing:0;color:rgba(251,215,132,.075);left:2%;pointer-events:none;user-select:none;white-space:nowrap}
+.ch.rev .ghost{left:auto;right:2%}
+.ghost.word{font-size:clamp(100px,15vw,240px)}
+.ch-in{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:center}
+.ch.rev .txt{order:2}
+.txt h2{font-size:44px;color:#fff;margin-bottom:12px}
+.txt .meta{letter-spacing:.3px;text-transform:none;font:italic 500 20px/1.4 var(--serif);color:var(--vang-nang);margin-bottom:22px}
+.txt p:not(.meta){font-size:17px;line-height:1.75;color:#E6DDC8;max-width:30em;margin-bottom:26px}
+.col{position:relative;padding-bottom:12%}
+.ph{overflow:hidden;border-radius:24px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7)}
+.ph img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.ph.m{aspect-ratio:4/3}.ph.m.tallish{aspect-ratio:4/4.4;width:78%}
+.ch.rev .ph.m.tallish{margin-left:auto}
+.ph.s{position:absolute;width:42%;aspect-ratio:1/1;right:-2%;bottom:0;border:6px solid var(--dem);z-index:2}
+.ch.rev .ph.s{right:auto;left:-2%}
+.ch.rev .ph.m.tallish~.ph.s{left:auto;right:auto;left:-2%}
+.rv{opacity:0;translate:0 40px;transition:opacity 1s ease,translate 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;translate:0 0}
+
+/* đoạn ảnh toàn màn Nha Trang */
+.band{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden}
+.band-bg{position:absolute;inset:0;overflow:hidden}
+.band-bg img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.band::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,var(--dem) 0,transparent 22%,transparent 40%,var(--dem) 100%)}
+.band .ghost{z-index:1;color:rgba(255,255,255,.14);top:22%;left:auto;right:3%}
+.band-t{position:relative;z-index:2;padding:0 max(var(--gutter),calc((100vw - 1232px)/2)) 96px;max-width:900px}
+.band-t h2{font-size:72px;line-height:1.1;color:#fff}
+.band-t .meta{font:italic 500 22px/1.4 var(--serif);color:var(--vang-nang);margin:10px 0 18px}
+.band-t p:not(.meta){font-size:18px;max-width:28em;color:#F0E7D3}
+
+.end{padding:130px 0 150px;text-align:center}
+.end h2{font-size:56px;color:#fff;max-width:14em;margin:0 auto 18px;text-wrap:balance}
+.end p{max-width:34em;margin:0 auto 32px;color:#CFC6B2;font-size:17px}
+.end .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.dark .btn{border-color:var(--vang-nang);color:var(--vang-nang)}
+.dark .btn.vang{background:var(--vang-nang);color:var(--dem)}
+.dark .btn.dac{background:var(--vang-nang);color:var(--dem)}
+
+.booth{text-align:center;background:#12303d;color:#fff;border:1px solid rgba(251,215,132,.3)}
+.booth h2{font-size:28px;margin-bottom:18px}
+.booth .x{background:rgba(255,255,255,.1);color:#fff}
+.strip4{width:190px;margin:0 auto 24px;background:#fff;padding:12px 12px 36px;display:grid;gap:10px;position:relative;rotate:-2deg;box-shadow:0 30px 50px -16px rgba(0,0,0,.6)}
+.strip4 img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.strip4 span{position:absolute;left:0;right:0;bottom:9px;font:italic 500 13px var(--serif);color:var(--man)}
+.booth .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .ch-in{grid-template-columns:1fr;gap:40px}
+  .ch.rev .txt{order:0}
+  .ch{padding:72px 0}
+  .rail{display:none}
+}
+@media (max-width:760px){
+  .nums .wrap{grid-template-columns:1fr 1fr}
+  .nums .wrap>div:nth-child(3){border-left:0}
+  .nums .wrap>div:nth-child(n+3){border-top:1px solid rgba(251,215,132,.18)}
+  .nums{padding-top:48px}.nums .wrap>div{padding:24px 8px}
+  .ghost{font-size:200px;top:12%;translate:0 0}
+  .ph.s{width:46%}
+  .col{padding-bottom:14%}
+  .band{min-height:84vh}.band-t{padding-bottom:64px}
+  .open{min-height:560px}.open-t{padding-bottom:40px}
+  .open h1{font-size:40px}.txt h2{font-size:32px}.band-t h2{font-size:40px}.end h2{font-size:34px}
+  .end{padding:80px 0 100px}
+}
+
+@media (min-width:901px){.ch-in{padding-right:110px}}
+
+/* Chương chỉ có một ảnh nổi bật: không chừa chỗ cho ảnh nhỏ nổi lên. */
+.col.mot-anh{padding-bottom:0}
+
+/* Danh sách "Nơi đến nhiều nhất" (F3) — bổ sung cho trang tổng kết. */
+.tk-places{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:26px}
+.tk-place{display:flex;flex-direction:column;gap:8px;padding:24px 26px;border-radius:var(--r-nho);
+  border:1px solid rgba(251,215,132,.28);background:rgba(255,255,255,.07);color:#F6EEDD}
+.tk-place b{font:600 30px/1 var(--head);letter-spacing:2px;color:var(--vang-nang)}
+.tk-place-name{font-size:16px;font-weight:600}
+.tk-place-count{font-size:14px;color:#CFC6B2}
+.dark .head p{color:#CFC6B2}
+@media (max-width:760px){
+  .tk-places{grid-template-columns:1fr 1fr;gap:12px}
+  .tk-place{padding:18px 16px}
+  .tk-place b{font-size:24px}
+  .tk-place-name{font-size:15px}
+}

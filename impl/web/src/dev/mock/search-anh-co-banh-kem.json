@@ -1,0 +1,286 @@
+{
+  "query": "ảnh có bánh kem",
+  "filters": {
+    "from": "2026-01-01",
+    "to": "2026-12-31",
+    "places": [
+      "Hà Nội"
+    ],
+    "tags": [
+      "bánh",
+      "kem",
+      "sinh nhật"
+    ],
+    "kinds": [
+      "birthday"
+    ],
+    "members": []
+  },
+  "results": [
+    {
+      "id": "m-bd-1",
+      "type": "photo",
+      "takenAt": "2026-05-02T16:30:00+07:00",
+      "place": "Hà Nội",
+      "country": "Việt Nam",
+      "lat": 21.03,
+      "lon": 105.85,
+      "caption": "Bánh sinh nhật Su, nến thắp lên là cả nhà im băng.",
+      "tags": [
+        "sinh nhật",
+        "bánh",
+        "nến",
+        "su",
+        "tiệc"
+      ],
+      "score": 9,
+      "collectionId": "sinh-nhat-su",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/banh-sn.jpg",
+        "lg": "/proto-photos/banh-sn.jpg",
+        "orig": "/proto-photos/banh-sn.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    {
+      "id": "m-bd-3",
+      "type": "photo",
+      "takenAt": "2026-05-02T17:10:00+07:00",
+      "place": "Hà Nội",
+      "country": "Việt Nam",
+      "lat": 21.03,
+      "lon": 105.85,
+      "caption": "Chụp lại cái bánh sau khi đã cắt gần hết.",
+      "tags": [
+        "sinh nhật",
+        "bánh",
+        "kem",
+        "su",
+        "gia đình"
+      ],
+      "score": 7,
+      "collectionId": "sinh-nhat-su",
+      "width": 960,
+      "height": 540,
+      "url": {
+        "sm": "/proto-photos/nen-sn.jpg",
+        "lg": "/proto-photos/nen-sn.jpg",
+        "orig": "/proto-photos/nen-sn.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    {
+      "id": "m-bd-2",
+      "type": "photo",
+      "takenAt": "2026-05-02T16:45:00+07:00",
+      "place": "Hà Nội",
+      "country": "Việt Nam",
+      "lat": 21.03,
+      "lon": 105.85,
+      "caption": "Su thổi hết nến trong tiếng vỗ tay của cả nhà.",
+      "tags": [
+        "sinh nhật",
+        "bong bóng",
+        "su",
+        "tiệc",
+        "vui"
+      ],
+      "score": 9,
+      "collectionId": "sinh-nhat-su",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/bong-bay.jpg",
+        "lg": "/proto-photos/bong-bay.jpg",
+        "orig": "/proto-photos/bong-bay.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    },
+    {
+      "id": "m-wk-5",
+      "type": "photo",
+      "takenAt": "2026-09-12T10:00:00+07:00",
+      "place": "Đồng Mô, Hà Nội",
+      "country": "Việt Nam",
+      "lat": 21.02,
+      "lon": 105.46,
+      "caption": "Mẹ và Su cùng làm bánh chiều Chủ Nhật.",
+      "tags": [
+        "làm bánh",
+        "mẹ",
+        "su",
+        "chủ nhật",
+        "nhà"
+      ],
+      "score": 9,
+      "collectionId": "cuoi-tuan-o-nha",
+      "width": 960,
+      "height": 640,
+      "url": {
+        "sm": "/proto-photos/me-con-banh.jpg",
+        "lg": "/proto-photos/me-con-banh.jpg",
+        "orig": "/proto-photos/me-con-banh.jpg"
+      },
+      "flags": {
+        "blurry": false,
+        "nearDuplicate": false,
+        "hidden": false
+      },
+      "aiStatus": "done"
+    }
+  ],
+  "collections": [
+    {
+      "id": "sinh-nhat-su",
+      "kind": "birthday",
+      "title": "Sinh nhật Su 7 tuổi",
+      "summary": "Su thổi hết nến trong tiếng vỗ tay, rồi cả nhà ăn bánh tới tối.",
+      "place": "Hà Nội",
+      "startAt": "2026-05-02T14:00:00+07:00",
+      "endAt": "2026-05-02T22:30:00+07:00",
+      "status": "accepted",
+      "cover": {
+        "id": "m-bd-1",
+        "type": "photo",
+        "takenAt": "2026-05-02T16:30:00+07:00",
+        "place": "Hà Nội",
+        "country": "Việt Nam",
+        "lat": 21.03,
+        "lon": 105.85,
+        "caption": "Bánh sinh nhật Su, nến thắp lên là cả nhà im băng.",
+        "tags": [
+          "sinh nhật",
+          "bánh",
+          "nến",
+          "su",
+          "tiệc"
+        ],
+        "score": 9,
+        "collectionId": "sinh-nhat-su",
+        "width": 960,
+        "height": 640,
+        "url": {
+          "sm": "/proto-photos/banh-sn.jpg",
+          "lg": "/proto-photos/banh-sn.jpg",
+          "orig": "/proto-photos/banh-sn.jpg"
+        },
+        "flags": {
+          "blurry": false,
+          "nearDuplicate": false,
+          "hidden": false
+        },
+        "aiStatus": "done"
+      },
+      "count": 121,
+      "members": [
+        {
+          "id": "m-tu-an",
+          "name": "Bố Tuấn",
+          "color": "#F6C445"
+        },
+        {
+          "id": "m-linh",
+          "name": "Mẹ Linh",
+          "color": "#FFC2DB"
+        },
+        {
+          "id": "m-su",
+          "name": "Su",
+          "color": "#D9C6FF"
+        },
+        {
+          "id": "m-bin",
+          "name": "Bin",
+          "color": "#BFE8D6"
+        }
+      ]
+    },
+    {
+      "id": "cuoi-tuan-o-nha",
+      "kind": "weekend",
+      "title": "Cuối tuần ở nhà",
+      "summary": "Những cuối tuần ở Hà Nội: bếp, phòng khách, Hồ Tây và mấy chuyến đi chỉ nửa ngày.",
+      "place": "Hà Nội",
+      "startAt": "2026-01-11T08:00:00+07:00",
+      "endAt": "2026-12-28T22:00:00+07:00",
+      "status": "accepted",
+      "cover": {
+        "id": "m-wk-4",
+        "type": "photo",
+        "takenAt": "2026-10-10T16:25:00+07:00",
+        "place": "Hồ Tây, Hà Nội",
+        "country": "Việt Nam",
+        "lat": 21.07,
+        "lon": 105.82,
+        "caption": "Bố đọc truyện cho con nghe bên cửa sổ Hồ Tây.",
+        "tags": [
+          "hồ tây",
+          "bố",
+          "con gái",
+          "đọc truyện",
+          "cuối tuần"
+        ],
+        "score": 8,
+        "collectionId": "cuoi-tuan-o-nha",
+        "width": 960,
+        "height": 640,
+        "url": {
+          "sm": "/proto-photos/bo-con-doc.jpg",
+          "lg": "/proto-photos/bo-con-doc.jpg",
+          "orig": "/proto-photos/bo-con-doc.jpg"
+        },
+        "flags": {
+          "blurry": false,
+          "nearDuplicate": false,
+          "hidden": false
+        },
+        "aiStatus": "done"
+      },
+      "count": 372,
+      "members": [
+        {
+          "id": "m-tu-an",
+          "name": "Bố Tuấn",
+          "color": "#F6C445"
+        },
+        {
+          "id": "m-linh",
+          "name": "Mẹ Linh",
+          "color": "#FFC2DB"
+        },
+        {
+          "id": "m-su",
+          "name": "Su",
+          "color": "#D9C6FF"
+        },
+        {
+          "id": "m-bin",
+          "name": "Bin",
+          "color": "#BFE8D6"
+        },
+        {
+          "id": "m-ba",
+          "name": "Bà nội",
+          "color": "#FFC79B"
+        }
+      ]
+    }
+  ]
+}

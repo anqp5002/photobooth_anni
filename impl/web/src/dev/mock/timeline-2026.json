@@ -1,0 +1,999 @@
+{
+  "months": [
+    {
+      "month": 2,
+      "days": [
+        {
+          "date": "2026-02-16",
+          "collectionId": "tet-que-noi",
+          "media": [
+            {
+              "id": "m-tet-1",
+              "type": "photo",
+              "takenAt": "2026-02-16T23:20:00+07:00",
+              "place": "Quê nội, Nam Định",
+              "country": "Việt Nam",
+              "lat": 20.42,
+              "lon": 106.17,
+              "caption": "Nửa đêm giao thừa, pháo hoa nổ ngay trên đầu cả làng.",
+              "tags": [
+                "pháo hoa",
+                "giao thừa",
+                "tết",
+                "đêm",
+                "làng quê"
+              ],
+              "score": 9,
+              "collectionId": "tet-que-noi",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/giao-thua.jpg",
+                "lg": "/proto-photos/giao-thua.jpg",
+                "orig": "/proto-photos/giao-thua.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            },
+            {
+              "id": "m-tet-2",
+              "type": "photo",
+              "takenAt": "2026-02-16T23:45:00+07:00",
+              "place": "Quê nội, Nam Định",
+              "country": "Việt Nam",
+              "lat": 20.42,
+              "lon": 106.18,
+              "caption": "Một vòng pháo hoa thứ hai, Su bịt tai cười toe.",
+              "tags": [
+                "pháo hoa",
+                "giao thừa",
+                "tết",
+                "su",
+                "gia đình"
+              ],
+              "score": 9,
+              "collectionId": "tet-que-noi",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/giao-thua-2.jpg",
+                "lg": "/proto-photos/giao-thua-2.jpg",
+                "orig": "/proto-photos/giao-thua-2.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": true,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-17",
+          "collectionId": "tet-que-noi",
+          "media": [
+            {
+              "id": "m-tet-3",
+              "type": "photo",
+              "takenAt": "2026-02-17T09:10:00+07:00",
+              "place": "Quê nội, Nam Định",
+              "country": "Việt Nam",
+              "lat": 20.41,
+              "lon": 106.16,
+              "caption": "Sáng mùng 1, quà Tết đặt trên bàn.",
+              "tags": [
+                "quà",
+                "tết",
+                "mùng 1",
+                "nhà nội",
+                "bàn"
+              ],
+              "score": 8,
+              "collectionId": "tet-que-noi",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/qua.jpg",
+                "lg": "/proto-photos/qua.jpg",
+                "orig": "/proto-photos/qua.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 3,
+      "days": [
+        {
+          "date": "2026-03-08",
+          "collectionId": "bin-tron-mot-tuoi",
+          "media": [
+            {
+              "id": "m-baby-1",
+              "type": "photo",
+              "takenAt": "2026-03-08T10:05:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Bin nở nước mắt xoay một vòng rồi cười toe.",
+              "tags": [
+                "bin",
+                "em bé",
+                "sinh nhật",
+                "cười",
+                "một tuổi"
+              ],
+              "score": 9,
+              "collectionId": "bin-tron-mot-tuoi",
+              "width": 960,
+              "height": 720,
+              "url": {
+                "sm": "/proto-photos/em-be.jpg",
+                "lg": "/proto-photos/em-be.jpg",
+                "orig": "/proto-photos/em-be.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            },
+            {
+              "id": "m-baby-2",
+              "type": "photo",
+              "takenAt": "2026-03-08T10:12:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Bàn tay bé xíu nắm chặt ngón tay bố.",
+              "tags": [
+                "bin",
+                "bàn tay",
+                "em bé",
+                "bố",
+                "gia đình"
+              ],
+              "score": 8,
+              "collectionId": "bin-tron-mot-tuoi",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/tay-be.jpg",
+                "lg": "/proto-photos/tay-be.jpg",
+                "orig": "/proto-photos/tay-be.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 4,
+      "days": [
+        {
+          "date": "2026-04-04",
+          "collectionId": "cuoi-tuan-o-nha",
+          "media": [
+            {
+              "id": "m-wk-1",
+              "type": "photo",
+              "takenAt": "2026-04-04T20:10:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Tối cuối tuần, cả nhà nằm xem phim trên phòng khách.",
+              "tags": [
+                "phòng khách",
+                "tối",
+                "cuối tuần",
+                "xem phim",
+                "gia đình"
+              ],
+              "score": 7,
+              "collectionId": "cuoi-tuan-o-nha",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/phong-khach.jpg",
+                "lg": "/proto-photos/phong-khach.jpg",
+                "orig": "/proto-photos/phong-khach.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": true,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-05",
+          "collectionId": "cuoi-tuan-o-nha",
+          "media": [
+            {
+              "id": "m-wk-2",
+              "type": "photo",
+              "takenAt": "2026-04-05T07:20:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Bữa sáng ăn chung, ai cũng hỏi một câu.",
+              "tags": [
+                "bữa sáng",
+                "bếp",
+                "gia đình",
+                "ăn uống",
+                "cuối tuần"
+              ],
+              "score": 8,
+              "collectionId": "cuoi-tuan-o-nha",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/bep.jpg",
+                "lg": "/proto-photos/bep.jpg",
+                "orig": "/proto-photos/bep.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 5,
+      "days": [
+        {
+          "date": "2026-05-02",
+          "collectionId": "sinh-nhat-su",
+          "media": [
+            {
+              "id": "m-bd-1",
+              "type": "photo",
+              "takenAt": "2026-05-02T16:30:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Bánh sinh nhật Su, nến thắp lên là cả nhà im băng.",
+              "tags": [
+                "sinh nhật",
+                "bánh",
+                "nến",
+                "su",
+                "tiệc"
+              ],
+              "score": 9,
+              "collectionId": "sinh-nhat-su",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/banh-sn.jpg",
+                "lg": "/proto-photos/banh-sn.jpg",
+                "orig": "/proto-photos/banh-sn.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            },
+            {
+              "id": "m-bd-2",
+              "type": "photo",
+              "takenAt": "2026-05-02T16:45:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Su thổi hết nến trong tiếng vỗ tay của cả nhà.",
+              "tags": [
+                "sinh nhật",
+                "bong bóng",
+                "su",
+                "tiệc",
+                "vui"
+              ],
+              "score": 9,
+              "collectionId": "sinh-nhat-su",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/bong-bay.jpg",
+                "lg": "/proto-photos/bong-bay.jpg",
+                "orig": "/proto-photos/bong-bay.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            },
+            {
+              "id": "m-bd-3",
+              "type": "photo",
+              "takenAt": "2026-05-02T17:10:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Chụp lại cái bánh sau khi đã cắt gần hết.",
+              "tags": [
+                "sinh nhật",
+                "bánh",
+                "kem",
+                "su",
+                "gia đình"
+              ],
+              "score": 7,
+              "collectionId": "sinh-nhat-su",
+              "width": 960,
+              "height": 540,
+              "url": {
+                "sm": "/proto-photos/nen-sn.jpg",
+                "lg": "/proto-photos/nen-sn.jpg",
+                "orig": "/proto-photos/nen-sn.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-16",
+          "collectionId": null,
+          "media": [
+            {
+              "id": "m-hero-chay",
+              "type": "photo",
+              "takenAt": "2026-05-16T16:00:00+07:00",
+              "place": "Công viên Yên Sở, Hà Nội",
+              "country": "Việt Nam",
+              "lat": 20.95,
+              "lon": 105.86,
+              "caption": "Su và Bin đuổi nhau trên bãi cỏ ở Yên Sở.",
+              "tags": [
+                "yên sở",
+                "chạy",
+                "trẻ con",
+                "bãi cỏ",
+                "chủ nhật"
+              ],
+              "score": 8,
+              "collectionId": null,
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/hero-chay.jpg",
+                "lg": "/proto-photos/hero-chay.jpg",
+                "orig": "/proto-photos/hero-chay.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 6,
+      "days": [
+        {
+          "date": "2026-06-14",
+          "collectionId": "cuoi-tuan-o-nha",
+          "media": [
+            {
+              "id": "m-wk-3",
+              "type": "photo",
+              "takenAt": "2026-06-14T15:40:00+07:00",
+              "place": "Ba Vì, Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.08,
+              "lon": 105.42,
+              "caption": "Bố và con dưới cơn mưa chiều ở Ba Vì.",
+              "tags": [
+                "ba vì",
+                "mưa",
+                "bố",
+                "con gái",
+                "cuối tuần"
+              ],
+              "score": 8,
+              "collectionId": "cuoi-tuan-o-nha",
+              "width": 960,
+              "height": 1440,
+              "url": {
+                "sm": "/proto-photos/bo-con-mua.jpg",
+                "lg": "/proto-photos/bo-con-mua.jpg",
+                "orig": "/proto-photos/bo-con-mua.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 7,
+      "days": [
+        {
+          "date": "2026-07-12",
+          "collectionId": "he-da-lat",
+          "media": [
+            {
+              "id": "m-dl-1",
+              "type": "photo",
+              "takenAt": "2026-07-12T10:40:00+07:00",
+              "place": "Đà Lạt",
+              "country": "Việt Nam",
+              "lat": 11.93,
+              "lon": 108.37,
+              "caption": "Xe dừng bên đường đèo, sương mù phủ kín kính xe.",
+              "tags": [
+                "đèo",
+                "xe",
+                "sương mù",
+                "đà lạt",
+                "di chuyển"
+              ],
+              "score": 8,
+              "collectionId": "he-da-lat",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/van-deo.jpg",
+                "lg": "/proto-photos/van-deo.jpg",
+                "orig": "/proto-photos/van-deo.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            },
+            {
+              "id": "m-dl-2",
+              "type": "photo",
+              "takenAt": "2026-07-12T11:15:00+07:00",
+              "place": "Đà Lạt",
+              "country": "Việt Nam",
+              "lat": 11.94,
+              "lon": 108.44,
+              "caption": "Su ngồi cạnh cửa sổ, nhìn xuống thung lũng.",
+              "tags": [
+                "cửa sổ",
+                "xe",
+                "su",
+                "đà lạt",
+                "phong cảnh"
+              ],
+              "score": 8,
+              "collectionId": "he-da-lat",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/cua-so-xe.jpg",
+                "lg": "/proto-photos/cua-so-xe.jpg",
+                "orig": "/proto-photos/cua-so-xe.jpg"
+              },
+              "flags": {
+                "blurry": true,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-13",
+          "collectionId": "he-da-lat",
+          "media": [
+            {
+              "id": "m-dl-3",
+              "type": "photo",
+              "takenAt": "2026-07-13T06:50:00+07:00",
+              "place": "Đà Lạt",
+              "country": "Việt Nam",
+              "lat": 11.88,
+              "lon": 108.51,
+              "caption": "Hồ buổi sớm, hơi nước bảng lảng trên mặt nước.",
+              "tags": [
+                "hồ",
+                "sáng sớm",
+                "đà lạt",
+                "sương",
+                "phong cảnh"
+              ],
+              "score": 9,
+              "collectionId": "he-da-lat",
+              "width": 960,
+              "height": 1438,
+              "url": {
+                "sm": "/proto-photos/da-ngoai-ho.jpg",
+                "lg": "/proto-photos/da-ngoai-ho.jpg",
+                "orig": "/proto-photos/da-ngoai-ho.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            },
+            {
+              "id": "m-dl-4",
+              "type": "photo",
+              "takenAt": "2026-07-13T09:20:00+07:00",
+              "place": "Đà Lạt",
+              "country": "Việt Nam",
+              "lat": 11.94,
+              "lon": 108.44,
+              "caption": "Bờ hồ và dãy núi xanh thẫm sau lớp sương.",
+              "tags": [
+                "hồ",
+                "núi",
+                "đà lạt",
+                "phong cảnh",
+                "cả nhà"
+              ],
+              "score": 9,
+              "collectionId": "he-da-lat",
+              "width": 960,
+              "height": 638,
+              "url": {
+                "sm": "/proto-photos/bien-nui.jpg",
+                "lg": "/proto-photos/bien-nui.jpg",
+                "orig": "/proto-photos/bien-nui.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            },
+            {
+              "id": "m-dl-6",
+              "type": "photo",
+              "takenAt": "2026-07-13T19:30:00+07:00",
+              "place": "Đà Lạt",
+              "country": "Việt Nam",
+              "lat": 11.94,
+              "lon": 108.45,
+              "caption": "Gian hàng ở chợ đêm, Su thích cái bóng đèn lộn loạn.",
+              "tags": [
+                "chợ",
+                "đêm",
+                "đà lạt",
+                "đèn lồng",
+                "mua sắm"
+              ],
+              "score": 8,
+              "collectionId": "he-da-lat",
+              "width": 960,
+              "height": 652,
+              "url": {
+                "sm": "/proto-photos/da-ngoai-cho.jpg",
+                "lg": "/proto-photos/da-ngoai-cho.jpg",
+                "orig": "/proto-photos/da-ngoai-cho.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-14",
+          "collectionId": "he-da-lat",
+          "media": [
+            {
+              "id": "m-dl-5",
+              "type": "photo",
+              "takenAt": "2026-07-14T08:05:00+07:00",
+              "place": "Đà Lạt",
+              "country": "Việt Nam",
+              "lat": 12.04,
+              "lon": 108.44,
+              "caption": "Chú chó ở quán cà phê đợi Su cho nó ăn.",
+              "tags": [
+                "chó",
+                "cà phê",
+                "sáng",
+                "đà lạt"
+              ],
+              "score": 6,
+              "collectionId": "he-da-lat",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/cho-xe.jpg",
+                "lg": "/proto-photos/cho-xe.jpg",
+                "orig": "/proto-photos/cho-xe.jpg"
+              },
+              "flags": {
+                "blurry": true,
+                "nearDuplicate": false,
+                "hidden": true
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 8,
+      "days": [
+        {
+          "date": "2026-08-08",
+          "collectionId": "bien-nha-trang",
+          "media": [
+            {
+              "id": "m-nt-1",
+              "type": "photo",
+              "takenAt": "2026-08-08T15:20:00+07:00",
+              "place": "Nha Trang",
+              "country": "Việt Nam",
+              "lat": 12.24,
+              "lon": 109.19,
+              "caption": "Cả nhà xuống biển lúc nắng chếch.",
+              "tags": [
+                "biển",
+                "nha trang",
+                "nắng",
+                "cả nhà",
+                "hè"
+              ],
+              "score": 9,
+              "collectionId": "bien-nha-trang",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/di-bien.jpg",
+                "lg": "/proto-photos/di-bien.jpg",
+                "orig": "/proto-photos/di-bien.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-09",
+          "collectionId": "bien-nha-trang",
+          "media": [
+            {
+              "id": "m-nt-2",
+              "type": "photo",
+              "takenAt": "2026-08-09T09:30:00+07:00",
+              "place": "Nha Trang",
+              "country": "Việt Nam",
+              "lat": 12.22,
+              "lon": 109.21,
+              "caption": "Su và Bin nghịch nước, không ai chịu ra khỏi.",
+              "tags": [
+                "biển",
+                "nước",
+                "trẻ con",
+                "nha trang",
+                "hè"
+              ],
+              "score": 8,
+              "collectionId": "bien-nha-trang",
+              "width": 960,
+              "height": 639,
+              "url": {
+                "sm": "/proto-photos/be-nuoc.jpg",
+                "lg": "/proto-photos/be-nuoc.jpg",
+                "orig": "/proto-photos/be-nuoc.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-10",
+          "collectionId": "bien-nha-trang",
+          "media": [
+            {
+              "id": "m-nt-3",
+              "type": "photo",
+              "takenAt": "2026-08-10T18:00:00+07:00",
+              "place": "Nha Trang",
+              "country": "Việt Nam",
+              "lat": 12.25,
+              "lon": 109.17,
+              "caption": "Cả nhà chụp chung ở bãi biển, ai cũng đủ mặt.",
+              "tags": [
+                "biển",
+                "cả nhà",
+                "chụp chung",
+                "nha trang",
+                "kỷ niệm"
+              ],
+              "score": 9,
+              "collectionId": "bien-nha-trang",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/hero-co.jpg",
+                "lg": "/proto-photos/hero-co.jpg",
+                "orig": "/proto-photos/hero-co.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 9,
+      "days": [
+        {
+          "date": "2026-09-12",
+          "collectionId": "cuoi-tuan-o-nha",
+          "media": [
+            {
+              "id": "m-wk-5",
+              "type": "photo",
+              "takenAt": "2026-09-12T10:00:00+07:00",
+              "place": "Đồng Mô, Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.02,
+              "lon": 105.46,
+              "caption": "Mẹ và Su cùng làm bánh chiều Chủ Nhật.",
+              "tags": [
+                "làm bánh",
+                "mẹ",
+                "su",
+                "chủ nhật",
+                "nhà"
+              ],
+              "score": 9,
+              "collectionId": "cuoi-tuan-o-nha",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/me-con-banh.jpg",
+                "lg": "/proto-photos/me-con-banh.jpg",
+                "orig": "/proto-photos/me-con-banh.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 10,
+      "days": [
+        {
+          "date": "2026-10-10",
+          "collectionId": "cuoi-tuan-o-nha",
+          "media": [
+            {
+              "id": "m-wk-4",
+              "type": "photo",
+              "takenAt": "2026-10-10T16:25:00+07:00",
+              "place": "Hồ Tây, Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.07,
+              "lon": 105.82,
+              "caption": "Bố đọc truyện cho con nghe bên cửa sổ Hồ Tây.",
+              "tags": [
+                "hồ tây",
+                "bố",
+                "con gái",
+                "đọc truyện",
+                "cuối tuần"
+              ],
+              "score": 8,
+              "collectionId": "cuoi-tuan-o-nha",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/bo-con-doc.jpg",
+                "lg": "/proto-photos/bo-con-doc.jpg",
+                "orig": "/proto-photos/bo-con-doc.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-11",
+          "collectionId": null,
+          "media": [
+            {
+              "id": "m-hero-om",
+              "type": "photo",
+              "takenAt": "2026-10-11T17:10:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Mẹ Linh ôm Su dưới nắng chiều.",
+              "tags": [
+                "mẹ",
+                "su",
+                "nắng chiều",
+                "ôm ấp",
+                "nhà"
+              ],
+              "score": 9,
+              "collectionId": null,
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/hero-om.jpg",
+                "lg": "/proto-photos/hero-om.jpg",
+                "orig": "/proto-photos/hero-om.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": 12,
+      "days": [
+        {
+          "date": "2026-12-24",
+          "collectionId": null,
+          "media": [
+            {
+              "id": "m-hoang-hon",
+              "type": "photo",
+              "takenAt": "2026-12-24T17:30:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Cả nhà đứng dưới trời chiều ngày cuối năm.",
+              "tags": [
+                "hoàng hôn",
+                "cả nhà",
+                "chiều",
+                "cuối năm"
+              ],
+              "score": 9,
+              "collectionId": null,
+              "width": 960,
+              "height": 720,
+              "url": {
+                "sm": "/proto-photos/tk-hoang-hon.jpg",
+                "lg": "/proto-photos/tk-hoang-hon.jpg",
+                "orig": "/proto-photos/tk-hoang-hon.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "skipped"
+            }
+          ]
+        },
+        {
+          "date": "2026-12-25",
+          "collectionId": "giang-sinh-voi-ba",
+          "media": [
+            {
+              "id": "m-xmas-1",
+              "type": "photo",
+              "takenAt": "2026-12-25T09:30:00+07:00",
+              "place": "Hà Nội",
+              "country": "Việt Nam",
+              "lat": 21.03,
+              "lon": 105.85,
+              "caption": "Sáng Giáng sinh, bà mở bao quà cho các cháu.",
+              "tags": [
+                "giáng sinh",
+                "bà",
+                "quà",
+                "sáng",
+                "gia đình"
+              ],
+              "score": 9,
+              "collectionId": "giang-sinh-voi-ba",
+              "width": 960,
+              "height": 640,
+              "url": {
+                "sm": "/proto-photos/ba-chau.jpg",
+                "lg": "/proto-photos/ba-chau.jpg",
+                "orig": "/proto-photos/ba-chau.jpg"
+              },
+              "flags": {
+                "blurry": false,
+                "nearDuplicate": false,
+                "hidden": false
+              },
+              "aiStatus": "done"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nextCursor": null
+}
