@@ -212,9 +212,14 @@ export class GeoIndex {
 
 /** Nạp chỉ mục từ thư mục `data/`. */
 export async function loadGeoIndex(dataDir) {
+  // Đường dẫn viết tĩnh để công cụ đóng gói (Vercel) nhận ra và mang theo 2 tệp dữ liệu.
+  const bundled = {
+    cities: new URL('../data/cities15000.txt', import.meta.url),
+    countries: new URL('../data/countryInfo.txt', import.meta.url),
+  };
   const [citiesText, countriesText] = await Promise.all([
-    fs.readFile(path.join(dataDir, 'cities15000.txt'), 'utf8'),
-    fs.readFile(path.join(dataDir, 'countryInfo.txt'), 'utf8'),
+    fs.readFile(dataDir ? path.join(dataDir, 'cities15000.txt') : bundled.cities, 'utf8'),
+    fs.readFile(dataDir ? path.join(dataDir, 'countryInfo.txt') : bundled.countries, 'utf8'),
   ]);
   return new GeoIndex(parseCities(citiesText), parseCountries(countriesText));
 }

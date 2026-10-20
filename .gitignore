@@ -39,3 +39,4 @@ design/ref/
 .claude/
 .playwright-mcp/
 tests/r1-old/
+.vercel/

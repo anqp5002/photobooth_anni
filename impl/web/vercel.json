@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://formed-much-house-continuous.trycloudflare.com/api/:path*" },
+    { "source": "/media/:path*", "destination": "https://formed-much-house-continuous.trycloudflare.com/media/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

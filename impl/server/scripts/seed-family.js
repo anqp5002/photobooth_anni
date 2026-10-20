@@ -25,9 +25,14 @@ import { nowIso } from '../src/util.js';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SERVER_ROOT = path.resolve(HERE, '..');
 const PROJECT_ROOT = path.resolve(SERVER_ROOT, '..', '..');
-const PHOTOS_DIR = path.join(PROJECT_ROOT, 'design', 'proto', 'assets', 'photos');
+// Ảnh mẫu nằm trong gói máy chủ (`demo/photos`) để bản deploy (Vercel) đóng gói được;
+// thiếu thì dùng bản gốc ở design/proto.
+const LOCAL_PHOTOS = fileURLToPath(new URL('../demo/photos/', import.meta.url));
+const PHOTOS_DIR = fs.existsSync(LOCAL_PHOTOS)
+  ? LOCAL_PHOTOS
+  : path.join(PROJECT_ROOT, 'design', 'proto', 'assets', 'photos');
 const SCHEMA_SQL = fs.readFileSync(new URL('../src/schema.sql', import.meta.url), 'utf8');
-const SEED_AI = JSON.parse(fs.readFileSync(path.join(HERE, 'seed-ai.json'), 'utf8'));
+const SEED_AI = JSON.parse(fs.readFileSync(new URL('./seed-ai.json', import.meta.url), 'utf8'));
 
 /* ------------------------------------------------------------------ */
 /* Vá lỗi lược đồ còn sót từ migration r1 → r2                          */

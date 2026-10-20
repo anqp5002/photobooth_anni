@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Hành Trình — máy chủ (Fastify + node:sqlite + sharp)",
   "engines": {
-    "node": ">=22"
+    "node": "24.x"
   },
   "scripts": {
     "start": "node src/index.js",
